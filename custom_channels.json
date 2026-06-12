@@ -1,0 +1,2408 @@
+[
+ {
+  "name": "Discovery",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_sd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
+  "category": "Adventure",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony PIX HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonypix_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony MAX 2",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonymax_2/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Entertainment Television",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_entertainment/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
+  "category": "Family",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony MAX HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_max_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "PSL Highlights",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/psl_highlights/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ns04LZYBtpl-Sbt7yKqD/posters/fef0cade-0663-4fc7-afb3-7a0b7469d045.png",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Toffee sports",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sports_highlights/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/d60Vs5UBrjBfS2_RV_YV/posters/3cc5bf1e-5a42-415c-8e0e-7a17a1bb64da.png",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony BBC Earth HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/MC6C-JQBv9knK3AHUzUT/posters/a8c32fd3-2ba7-437c-85ac-de2f1b2fa6ca.webp",
+  "category": "Family",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony SAB HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonysab_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/ES55-JQBv9knK3AHNDWC/posters/13411be9-62b9-4a99-a062-b6e91dfb1099.webp",
+  "category": "Family",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Toffee Dramas",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/DNMXs5UBm1RY_In7IJ72/posters/25b0cac5-f1e9-4541-a9cd-ab667f27c7b1.png",
+  "category": "Drama",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Toffee Movies",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/b60Ss5UBrjBfS2_RJPb8/posters/278fd2ab-3320-440c-9e8d-d702cea3dfa8.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Ten Sports 5 HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/241705c1-06a9-4694-92c6-0013d1879e42.webp",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Ten Cricket",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ten_cricket/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Action",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_action/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Pc3RD5YBtpl-Sbt7doxr/posters/d0f337ab-a7e6-4eed-bc7b-7d51fdc70a0f.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Anmol",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_anmol/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/7x0Jd5YBEef-9-uVv_Gy/posters/f630a176-73cc-48d7-94cf-69ba0d201b36.png",
+  "category": "Drama",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Bangla Cinema",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla_cinema/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/-C7MX5UBv9knK3AHdKOi/posters/1f43be2f-f8d9-4a0c-b0cb-971a18a6771c.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Cafe",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_cafe_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/U3QEd5YBcqxnFHJBpYzc/posters/3442d493-0c71-44b9-b12f-8e600d5eab91.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Bollywood",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bollywood/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/OnSlPJYBcqxnFHJB6lFX/posters/4818f95a-c64a-490f-b310-a49aec026d71.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zing",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zing_sd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/DK8dd5YBrjBfS2_Ru22e/posters/a89a1e2e-677c-4a8a-9a66-dff5e0b921c8.png",
+  "category": "Comedy",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "ICC Test Championship Highlights",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/icc_wtc_final/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/PnZefJcBcqxnFHJBoxca/posters/14699162-6ec8-4a94-a572-2795c6ddd329.png",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Cinema HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_cinema_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/5y7HX5UBv9knK3AHs6Nk/posters/794fd415-1b0a-49b5-b91b-2f62ba6cd759.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "& Pictures HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/andpicture_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/QMwWnZUBtpl-Sbt7S2sx/posters/f2e6acfd-0031-4ca4-b954-c014a0c99058.png",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony MAX",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_max/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
+  "category": "Movies",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Aath",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyaath/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/xi6xX5UBv9knK3AH9aMk/posters/f4db1c12-b10f-46e8-a09b-e0efb8820970.png",
+  "category": "Drama",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "&TV HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/and_tv_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/5cwRnZUBtpl-Sbt7wWrN/posters/28335dab-169c-49b6-8d10-ef697f940307.png",
+  "category": "Drama",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee TV HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_tv_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/ltPQX5UBm1RY_In7b3F1/posters/f81d0cc9-c00e-4839-951a-b754e0e6c58f.png",
+  "category": "Drama",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Ten Sports 1 HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony YAY",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyyay/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/IC5_-JQBv9knK3AHFDXh/posters/36df4012-80f2-4a98-9970-3b663f62093f.webp",
+  "category": "Family",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Zee Bangla",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/kK2aX5UBrjBfS2_RBcKf/posters/16e111ed-2335-4391-9618-f840e4c4a6a2.png",
+  "category": "Drama",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Ten Sports 2 HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_2_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/sy5m-JQBv9knK3AHYTTk/posters/a664bf2a-af9c-4e79-89df-50a40a6e3e66.png",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Entertainment Television HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sonyentertainmnt_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/-y50-JQBv9knK3AHLzSn/posters/0ab48ac0-ec84-4ca2-9601-746ff3cb809e.webp",
+  "category": "Family",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Sony Ten Sports 3 HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_3_hd/playlist.m3u8",
+  "logo": "https://static.wikia.nocookie.net/logopedia/images/f/ff/Sony_Sports_Ten_3.png",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Eurosport HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
+  "category": "Sports",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "B4U Movies APAC",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/b4u_movies/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/PC6F-JQBv9knK3AHlTUO/posters/fb0243ba-39a0-4101-a78c-c197be550c6c.webp",
+  "category": "Movie",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "HUM",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/hum_tv/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/0C63X5UBv9knK3AHxaOs/posters/6dce1143-1045-4fec-ac4f-86d2bfb32447.png",
+  "category": "Entertainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "HUM Masala",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/hum_masala/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/T9O9X5UBm1RY_In7UXFv/posters/30e0f372-eb3e-4cf9-be1e-b196a40c2fc7.png",
+  "category": "Entertainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "HUM Sitaray",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/hum_sitaray/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/WtPBX5UBm1RY_In7mXEU/posters/188d51f6-aeef-41ed-835b-e25ff911e209.png",
+  "category": "Entertainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "B4U Music",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/b4u_music/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/PS6F-JQBv9knK3AHqjVz/posters/0f83ee72-be0f-4861-94df-30b158d3df8d.webp",
+  "category": "Entertainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "TLC HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/tlc_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "TLC",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/tlc_sd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/7C6j-JQBv9knK3AHVzUA/posters/e8f84105-5efe-4e91-a0d4-18a0849cf2f2.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Animal Planet",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/animal_planet_sd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Animal Planet HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/animal_planet_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Discovery HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "CNN",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cnn/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Discovery Science",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_science/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Discovery Turbo",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_turbo/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/Ay6s-JQBv9knK3AHJTY1/posters/e8f65578-e82d-4e4a-a1ff-073becc5bd71.webp",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Investigation Discovery HD",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/discovary_investigation_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
+  "category": "Infotainment",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Cartoon Network HD +",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network_hd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
+  "category": "Kids",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Cartoon Network",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network_sd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/mC6W-JQBv9knK3AHfDWA/posters/d2a02d82-fde4-4769-a6d9-95c0560e2120.webp",
+  "category": "Kids",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "POGO",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/pogo_sd/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/ny6W-JQBv9knK3AHujXC/posters/7e7c2afe-a663-4c09-983a-2d0fa0f1ca9a.webp",
+  "category": "Kids",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "Discovery Kids",
+  "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_kids/playlist.m3u8",
+  "logo": "https://assets-prod.services.toffeelive.com/f_webp,w_240,q_100/1i6e-JQBv9knK3AHHTXR/posters/325887a7-84ea-4cf9-a6fd-6111ddc25671.webp",
+  "category": "Kids",
+  "headers": {
+   "Host": "bldcmprod-cdn.toffeelive.com",
+   "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1781288256:KeyName=prod_linear:Signature=vrpqTgjHnn3ousNrFIofslrKTP4IlWRDl81MaZ4WZF41cVZTCStPGhPGff4hSlm9_CLQDZ4BGnN5Aj5N7dnQCQ",
+   "user-agent": "Toffee BD Tech Expert (Linux;Android 14) AndroidXMedia3/1.1.1/64103898/4d2ec9b8c7534adc",
+   "client-api-header": "null",
+   "accept-encoding": "gzip"
+  }
+ },
+ {
+  "name": "PTV Sports",
+  "url": "https://tvsen5.aynaott.com/PtvSports/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/c2/9b/0a/c29b0adf-875f-37b0-3e08-7ee9b62b8b02/AppIcon-1x_U007emarketing-85-220-0-8.jpeg/1024x1024bb.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "Tsports",
+  "url": "https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://i.postimg.cc/VL5yTtwr/20250707_141739.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "FIFA+ live",
+  "url": "https://37b4c228.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWZyX0ZJRkFQbHVzRnJlbmNoX0hMUw/6f5437c5-e015-4754-8476-c8c6d27d3a55/1.m3u8",
+  "logo": "https://images.seeklogo.com/logo-png/53/1/fifa-logo-png_seeklogo-537674.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "Willow",
+  "url": "https://tvsen5.aynaott.com/willowhd/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://i.postimg.cc/qgfrNjFH/20250529_123654.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "A Sports",
+  "url": "https://tvsen6.aynaott.com/asports/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://i.postimg.cc/ZqbZdnHq/20251002_225834.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "TNT 1",
+  "url": "https://mxonlive.xyz/universal_restream/play/799/stream.m3u8",
+  "logo": "https://i.postimg.cc/GmFLynr7/20250529_130819.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "DAZN 1",
+  "url": "https://mxonlive.xyz/universal_restream/play/832/stream.m3u8",
+  "logo": "https://i.postimg.cc/YqmqtmPw/20250529_130211.png",
+  "category": "Sports",
+  "headers": {}
+ },
+ {
+  "name": "FIFA World Cup live",
+  "url": "https://tvsen5.aynaott.com/PtvSports/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://i.postimg.cc/QjD6hcSc/FIFA-World-Cup-Logo-2022.jpg",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "T sports",
+  "url": "https://tvsen7.aynaott.com/tsports-hd/playlist.m3u8",
+  "logo": "https://www.jagobd.com/wp-content/uploads/2019/12/t-sports.jpg",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Discovery Bangla",
+  "url": "https://tvsen6.aynaott.com/discovery_hd_bangla/index.m3u8",
+  "logo": "https://images.toffeelive.com/images/program/18097/logo/240x240/mobile_logo_297723001673195119.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "National Geographic",
+  "url": "https://tvsen6.aynaott.com/natgeo/index.m3u8",
+  "logo": "https://account.nationalgeographic.com/media/national-geographic/media/National-Geographic-Logo.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Nick",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/nickhindi/master.m3u8",
+  "logo": "https://play-lh.googleusercontent.com/hs9q_ggMJ-cUFiqqpSi-pC12G8-pdbjKo2c4Y5t1VQfB8t9_vEKOpVFGM3imFvxUbLg",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Nick HD+",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/nickhd/master.m3u8",
+  "logo": "https://images.seeklogo.com/logo-png/31/1/nick-hd-logo-png_seeklogo-314639.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Sonic Bangla",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/sonicbangla/master.m3u8",
+  "logo": "https://live.dinesh29.com.np/logos/jiotvplus/sonicbangla.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Hungama",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/hungama/master.m3u8",
+  "logo": "https://live.dinesh29.com.np/logos/jiotvplus/hungama.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Super Hungama",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/superhungama/master.m3u8",
+  "logo": "https://live.dinesh29.com.np/logos/jiotvplus/superhungama.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Duronto TV",
+  "url": "https://tvsen6.aynaott.com/durontotv-live/index.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/d/d7/Duronto_TV_Logo.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Nagorik TV",
+  "url": "https://tvsen6.aynaott.com/nagoriktv/index.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Logo_of_Nagorik_TV.svg/1200px-Logo_of_Nagorik_TV.svg.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Deepto TV",
+  "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Logo_of_Deepto_TV.svg/140px-Logo_of_Deepto_TV.svg.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Enterr10 Bangla",
+  "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_360p/chunks.m3u8",
+  "logo": "https://static.wikia.nocookie.net/logopedia/images/0/01/Enterr10_Bangla.jpg",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Sports select  1",
+  "url": "https://cdn1.ctgiptv.com/star-select-1/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/200/-/Star_Sports_Select_HD_1.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Sports select  2",
+  "url": "https://cdn1.ctgiptv.com/star-select-2/tracks-a1/mono.ts.m3u8",
+  "logo": "https://live.dinesh29.com.np/logos/jiotvplus/starsportsselecthd2.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Sports 1",
+  "url": "https://mxonlive.xyz/universal_restream/play/810/stream.m3u8",
+  "logo": "https://wclegends.uk/wp-content/uploads/2025/07/star-sports-hindi-hd-WCL-2025-Broadcaster.webp",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Sports 2",
+  "url": "https://mxonlive.xyz/universal_restream/play/805/stream.m3u8",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiFDmfGWRRhNvctt0StKUFKyPkGj7zR_EEDg&s",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "A Sports HD",
+  "url": "https://tvsen6.aynaott.com/asports/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://play-lh.googleusercontent.com/Qhs1jcocO2FenxF7j5DBVn-3lQV3cPhnsJCfeo3fAvEPzdsUx1RCb8Ka956B_ZEhAA8",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Willow HD 2",
+  "url": "https://mxonlive.xyz/universal_restream/play/808/stream.m3u8",
+  "logo": "https://raw.githubusercontent.com/abusaeeidx/Tv-Channel-Logo/heads/main/CricHD/runded/8-by-xfireflix.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Jalsha",
+  "url": "https://tvsen3.aynaott.com/n64PH4YL/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Jalsha HD",
+  "url": "https://tvsen3.aynaott.com/n64PH4YL/tracks-v1a1/mono.ts.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Jalsha Movies",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/jalshamovies/master.m3u8",
+  "logo": "https://static.wikia.nocookie.net/logopedia/images/6/61/Jalsha_Movies.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Jalsha Movies HD",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/jalshamovieshd/master.m3u8",
+  "logo": "https://live.dinesh29.com.np/logos/jiotvplus/jalshamovieshd.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Plus",
+  "url": "https://tvsen7.aynaott.com/sphdbd/index.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/d/d7/StarPlus_Logo.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Plus HD",
+  "url": "https://tvsen7.aynaott.com/sphdbd/index.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/d/d7/StarPlus_Logo.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Bharat",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/starbharat/master.m3u8",
+  "logo": "https://live.dinesh29.com.np/logos/jiotvplus/starbharat.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Star Bharat HD",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/starbharathd/master.m3u8",
+  "logo": "https://static.wikia.nocookie.net/logopedia/images/b/b9/Star_bharat_hd_clean.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Colors",
+  "url": "https://live.dinesh29.com.np/stream/jiotv/colorssd/master.m3u8",
+  "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Colors_SD.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Colors HD",
+  "url": "https://live.dinesh29.com.np/stream/jiotv/colorshd/master.m3u8",
+  "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Colors_SD.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Colors Bangla",
+  "url": "https://padmaonline.duckdns.org:8088/ColorsBanglaHD/tracks-v1a1/mono.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Colors_Bangla.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Colors Bangla HD",
+  "url": "https://padmaonline.duckdns.org:8088/ColorsBanglaHD/tracks-v1a1/mono.m3u8",
+  "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/0/08/Colors_Bangla_HD_logo_%282016-alt%29.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Colors Bangla Cinema",
+  "url": "https://live.dinesh29.com.np/stream/jiotv/colorsbanglacinema/master.m3u8",
+  "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/0/06/Colors_Bangla_Cinema_logo_%282023-2024%29.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Sun Bangla",
+  "url": "https://live.dinesh29.com.np/stream/jiotv/sunbangla/master.m3u8",
+  "logo": "https://upload.wikimedia.org/wikipedia/en/b/b3/Sun_Bangla.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Ruposhi Bangla",
+  "url": "https://cdn-4.pishow.tv/live/1039/master.m3u8",
+  "logo": "https://i.postimg.cc/pLs2ZYhz/20250529-111853.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Nat Geo Wild",
+  "url": "https://live.dinesh29.com.np/stream/jiotvplus/natgeowild/master.m3u8",
+  "logo": "https://images.seeklogo.com/logo-png/33/2/nat-geo-wild-logo-png_seeklogo-333045.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Sangeet Bangla",
+  "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
+  "logo": "https://pbs.twimg.com/media/GsKaFVeWsAAJbgi?format=jpg&name=large",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "9XM",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/a731c680-6a62-4174-bc98-186fe654724a/0.m3u8",
+  "logo": "https://static.wikia.nocookie.net/logopedia/images/8/81/9xm_red.svg",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Jago News 24",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jagonews24.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Independent TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/independent-8-org.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Desh TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshtv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "News 24",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/news24local.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Makkah Live",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "BTV News",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvbd-office-sg.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Eakattor TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ekattor.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Ekhon TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/globaltv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Jamuna TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jamuna-test-sample-ok.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ATN News",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnws-sg.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Songsad TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/songsodtv-world.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "BTV National",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvnational1.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "BTV Chittagong",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvnational-ctg.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "DBC News",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/dbcnews.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel 24",
+  "url": "https://ch24play.ncare.io/live/channel24.926f3953.m3u8?t=b738cb0516564076a627a7beffadc188",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Somoy TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/somoyt000011226615544544.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ATN Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnbd-8-org.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bangla Vision",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/banglav000.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "MY TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Mohona TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mohonatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel 9",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel9hd.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "RTV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Boishakhi TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/boishakhitv-org.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Ananda TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ATN Bangla [Source 2]",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnbd-8-org.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "SATV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/satvoff5666.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel S BD",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channels.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bangla TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/banglatvhd.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bijoy TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bijoy00.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Teen Prime",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/tenprime.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Asian TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/asian-test-sample-ok-d.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel I",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Global TV Bangladesh",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Ekusheys TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ekusheytv-8-org.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Cumilla 24",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cumilla24bd.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "PBN TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/pbntv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Gazi TV / G tv",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Flix SRk TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/flixsrktv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Times 24 TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/times24tv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Rajdhani TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rajdhanitv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Varendra TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/varendratv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Movie Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/moviebanglalink2.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Jagoroni TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jagoronitv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "NAN TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nantv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Shadin BD",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/shadinbd1.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "News 21 BD",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/news21bd.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "BNN TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/satvoff5666.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Parboto TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/parbototv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Sports Tennis",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sportstak/SPORTSTAK_SCTE.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Outside TV",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sportstak/SPORTSTAK_SCTE.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Trace Sports",
+  "url": "https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CY Dubai",
+  "url": "https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1300000.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Moto Racing",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/motorracing/master.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Sports Connect",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sportstak/SPORTSTAK_SCTE.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Court Sports Network",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/court-sports-network/7c96e8a8-9be8-487f-9509-cb2fa31f35d4/1.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "KIK Sports",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/kiksp.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Geo TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/geotv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Nobbano TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cmtv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Express TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/expresspk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "HUM TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/hum.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Global Fashion Channel",
+  "url": "https://pubgfc.teleosmedia.com/linear/globalfashionchannel/globalfashionchannel/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bangla 21 TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bangla21tv000889956-sg.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Movie Action",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/movieaction.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Hollywood Desi",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bo1.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bollywood Movie",
+  "url": "https://amg00864-shemarooenterta-shemabollywood-ono-nlwbw.amagi.tv/playlist/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Lotus Macau",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/lotusmacautv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "The Movie Club",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bo2.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "B24C",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/b24c.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Masala Entertainment Plus",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/masala-entertainment-plus/master.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel A1",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cha1.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Aur Life HD",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/aurtvpk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Sananda TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/sanandatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Dim TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/dimtv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Tara TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/tara.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Matribhumi TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/matribhumitv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Alpona TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/alponatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "BA TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/batvuk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "TV One",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/tvonepk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Apna Ch",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/apnach.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "See TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/seetv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Urdu 1",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/urdu1.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Eye TV Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/eyetv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Movie Plus",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/movieplus.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Birit Asia TV",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/britasiatv/ad785215-9b76-421c-b7c9-ec8c7670ceff/0.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Trace Urban",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/traceurban.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "V2 Beat TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/v2beattv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Joo Music",
+  "url": "https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ATN Music",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnmusic.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Balle Balle",
+  "url": "https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Saga Music",
+  "url": "https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Masti",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mastiiiin.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "91NRG",
+  "url": "https://5c389faa13be3.streamlock.net/onweb/live/chunklist_w282239334.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "E24",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/e24in.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "9x Jalwa",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/9xjalwain.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Zoom",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/zoomin.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Music India",
+  "url": "https://tvsen6.aynaott.com/MusicIndia/index.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Burno TV",
+  "url": "https://stream1.xdevel.com/video0s975758-1047/stream/chunks.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Colosal TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/colosal.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ShowBox",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/showboxin.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "8XM",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/8xmpk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Music Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla44.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Music Bangla TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla2025.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel 5",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Tropoja TV",
+  "url": "https://live.prostream.al/al/smil:tropojatv.smil/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CGTN Documentary",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cgtndoc.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Discover Pakistan",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/discoverpakistan.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Nexus TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nexustv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "RT TV",
+  "url": "https://rt-rtd.rttv.com/dvr/rtdoc/playlist_4500Kb.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Everyday Heros",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/everyday-heroes/master.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Wid Earth",
+  "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearth-oando/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Wid Earth [ Source 2 ]",
+  "url": "https://d2f9g9rfw2kx84.cloudfront.net/playlist/amg01290-wildearth-oando/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Open TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/boulive.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Real Wlid",
+  "url": "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00426-littledotstudio-realwildnz-samsungnz/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Real Wlid [ Source 2 ]",
+  "url": "https://amg00426-littledotstudio-realwildnz-samsungnz-wz0bm.amagi.tv/playlist/amg00426-littledotstudio-realwildnz-samsungnz/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Military Times",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/sightline/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "VOA 52 Documentary",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/voadoc.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ESA TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/esatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "UNTV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/untv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "POP Up",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/popup.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CON Tv",
+  "url": "https://kidoodletv-kdtv-1-us.samsung.wurl.tv/1200.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Kids TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rongeentv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Kids TV India",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/kids-tv-india-nursery-rhymes-and-baby-songs/master.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Toonz Kids",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/toonzkids/master.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Zoo Moo",
+  "url": "https://zoomoo-samsungau.amagi.tv/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "PBS Kids",
+  "url": "https://2-fss-2.streamhoster.com/pl_140/amlst%3a200914-1298290/chunklist_b2000000.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Kids Creation",
+  "url": "https://flc2.technohaat.com/kidscreation_test/index.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Tiny Pop",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/tinypop/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Kids Max",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/duronto.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Pop",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/pop.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Baby Shark",
+  "url": "https://newidco-babysharktv-1-eu.rakuten.wurl.tv/1200.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Express News",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/expressnews.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Amar Bangla TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/amarbanglatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Mon TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/montv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Amar Digital",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/amardigital.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Network 10",
+  "url": "https://network10.livebox.co.in/network10hls/live.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Somoy Kolkata",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/samaykolkata.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Zodiak TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/zodiaktv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bangla + HD",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/banglaplushd.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Zillar Barta",
+  "url": "https://live-stream.utkalbongo.com/utkalbongo/stream18/hls/zillarbartalive.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CTV N AKD Plus",
+  "url": "https://akdnetwork.co.in/live/ctvn/index.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "HIGH News",
+  "url": "https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Onkar Bangla",
+  "url": "https://5dd3981940faa.streamlock.net/onkarentertainment/onkarentertainment/chunklist_w1855751334.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Ananda Barta",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandabarta.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Home TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/hometv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ATN Islamic TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnislamictv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Makkah TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkahtv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Deen TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deentv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Madina Live",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/madina.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Peace TV Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/peacetvban.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Salam TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/salamtvuk1.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Madani Ch Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/madanitvbangla.stream1/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Islam Channel",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchannel.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Iqraa",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/iqraa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Islam Ch Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Eman Channel",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/eman.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Islam Tv",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamtv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Iqra Tv UK",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/iqratvuk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "i Tv USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/itvusa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Azan Tv Canada",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/azantv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Wedding Tv ( Love Stories )",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/wedding-tv-by-love-stories-tv/master.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Cook & Bake",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/cook-and-bake/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "AXS TV Now ( Comedy )",
+  "url": "https://dikcfc9915kp8.cloudfront.net/hls/main.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Gusto TV",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/gusto-tv/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Craftsy TV",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/craftsytv/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Travel XP",
+  "url": "https://travelxp-travelxp-3-nl.samsung.wurl.tv/1200.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Lifeminute Tv",
+  "url": "https://amg01468-lifeminutetv-lifeminute-klowdtv-r4hhz.amagi.tv/playlist/amg01468-lifeminutetv-lifeminute-klowdtv/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Always Funny TV",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/always-funny/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Always Funny",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/always-funny/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Go 2 Travel",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/go2travel.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CGTN News",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cgtn.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "News Nation",
+  "url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/news-nation/nnnational.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "France 24",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/fr24.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "VOA TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/voa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "AL Jazeera",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/aljazeera.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "DW News",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/dwnews.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "TRT World",
+  "url": "https://tv-trtworld.medya.trt.com.tr/master_480.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CNN INT",
+  "url": "https://amg01448-samsungin-cnnnow-samsungin-4npqg.amagi.tv/playlist/amg01448-samsungin-cnnnow-samsungin/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "RT",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtnews.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Duniya News",
+  "url": "https://intl.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "9 News",
+  "url": "https://video.tegnaone.com/kusa/live/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/KUSA-Production/live/index.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Freedom",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/uatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "VOA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/voa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "NHK World",
+  "url": "https://nhkworld-tv.akamaized.net/hls/live/2115640/nhkworld-tv/index_1M.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Euro News",
+  "url": "https://a-cdn.klowdtv.com/live3/euronews_720p/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Press TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/presstv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Africa News",
+  "url": "https://rakuten-africanews-1-ie.samsung.wurl.tv/manifest/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CSB News USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/csbnewsbd.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Iqra TV Bangla",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/iqrabanglatvoffice.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ATN Bangla UK",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CH S TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/chsukoff.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "NTV UK",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "ION TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/iontvuk.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Bangla TV UK",
+  "url": "https://cdn.ghuddi.live/tvpage/Bangla_TV_EU/Transcoded/Bangla_TV_EU_1080p/chunks.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Biswa Bangla TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/biswabanglatv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "The Channel TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/thechanneltv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Time TV USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/timetvusa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "IB TV USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ibtvus.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Jonmobhumi Tv",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jonmobhumitv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "AB TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/abtvusa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Deshi TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshitv.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Millennium 24 USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mnews24.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Millennium TV USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/millenniumtv-odr-up2.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "NRB TV Canada",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nrb-eu.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "CB 24 TV",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cb24.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ },
+ {
+  "name": "Channel 52 USA",
+  "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel25usa.stream/playlist.m3u8",
+  "logo": "https://i.postimg.cc/pdDTZFjr/image.png",
+  "category": "General",
+  "headers": {}
+ }
+]
