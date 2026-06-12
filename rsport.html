@@ -919,17 +919,6 @@ let allStreams=[], allChannels={}, allCountries={}, allLogos={};
 let activeHls=null, filteredList=[], currentIndex=-1;
 let activeCountry='BD', activeCategory='', currentCard=null;
 
-// Dead channel tracking — persisted so offline streams stay hidden across visits
-let deadChannels = new Set();
-try {
-  const stored = JSON.parse(localStorage.getItem('rsport_dead') || '[]');
-  deadChannels = new Set(stored);
-} catch(e){}
-
-function saveDeadChannels(){
-  try { localStorage.setItem('rsport_dead', JSON.stringify([...deadChannels])); } catch(e){}
-}
-
 const CAT_ICONS={
   news:'📰',sports:'⚽',movies:'🎬',entertainment:'🎭',
   music:'🎵',kids:'🧸',documentary:'🎞️',cooking:'🍳',
@@ -1035,7 +1024,6 @@ function mkTab(label,cat,count,active){
 function getFiltered(){
   const q=document.getElementById('search').value.toLowerCase().trim();
   return allStreams.filter(s=>{
-    if(deadChannels.has(s.url)) return false;
     const ch=allChannels[s.channel]||{};
     const title=(s.title||ch.name||'').toLowerCase();
     if(q&&!title.includes(q)) return false;
@@ -1133,15 +1121,8 @@ function showError(){
   const o=document.getElementById('player-overlay');
   o.style.display='flex';
   document.getElementById('spinner').style.display='none';
-  document.getElementById('overlay-msg').textContent='🔴 This channel is offline — removing from list';
+  document.getElementById('overlay-msg').textContent='🔴 This channel is offline — try another one';
   if(currentCard) currentCard.classList.add('offline');
-
-  if(currentIndex>=0 && filteredList[currentIndex]){
-    const deadUrl=filteredList[currentIndex].url;
-    deadChannels.add(deadUrl);
-    saveDeadChannels();
-    setTimeout(()=>{ currentCard=null; currentIndex=-1; renderGrid(); }, 900);
-  }
 }
 
 document.getElementById('btn-prev').addEventListener('click',()=>{
