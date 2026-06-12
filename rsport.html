@@ -293,6 +293,85 @@ video {
   border-bottom: 1px solid var(--border);
 }
 
+/* WORLD CUP LIVE BANNER */
+.wc-section {
+  background: var(--bg);
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.wc-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(255,45,85,0.12), rgba(255,96,48,0.06));
+  border: 1.5px solid var(--accent);
+  border-radius: 14px;
+  padding: 12px 14px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s;
+}
+
+.wc-card:active { transform: scale(0.98); }
+
+.wc-card::before {
+  content: '🏆';
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 60px;
+  opacity: 0.08;
+}
+
+.wc-logo {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.wc-info { flex: 1; min-width: 0; }
+
+.wc-title {
+  font-size: 13px;
+  font-weight: 800;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 1px;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wc-sub {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.wc-live-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.wc-play {
+  font-size: 22px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
 .section-title-row {
   display: flex;
   align-items: center;
@@ -777,6 +856,18 @@ video {
   <button class="ctrl-btn" id="btn-next">Next ⏭</button>
 </div>
 
+<!-- WORLD CUP LIVE -->
+<div class="wc-section">
+  <div class="wc-card" id="wc-card">
+    <img class="wc-logo" src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/c2/9b/0a/c29b0adf-875f-37b0-3e08-7ee9b62b8b02/AppIcon-1x_U007emarketing-85-220-0-8.jpeg/1024x1024bb.png" alt="PTV Sports">
+    <div class="wc-info">
+      <div class="wc-title"><span class="wc-live-dot"></span> Watch World Cup Live</div>
+      <div class="wc-sub">PTV Sports</div>
+    </div>
+    <div class="wc-play">▶</div>
+  </div>
+</div>
+
 <!-- SEARCH -->
 <div class="search-wrap">
   <div class="search-box">
@@ -824,10 +915,20 @@ video {
 
 
 <script>
-let allStreams=[], allChannels={}, allCountries={}, allLogos={}, allCustom=[];
+let allStreams=[], allChannels={}, allCountries={}, allLogos={};
 let activeHls=null, filteredList=[], currentIndex=-1;
 let activeCountry='BD', activeCategory='', currentCard=null;
-let customMode=false;
+
+// Dead channel tracking — persisted so offline streams stay hidden across visits
+let deadChannels = new Set();
+try {
+  const stored = JSON.parse(localStorage.getItem('rsport_dead') || '[]');
+  deadChannels = new Set(stored);
+} catch(e){}
+
+function saveDeadChannels(){
+  try { localStorage.setItem('rsport_dead', JSON.stringify([...deadChannels])); } catch(e){}
+}
 
 const CAT_ICONS={
   news:'📰',sports:'⚽',movies:'🎬',entertainment:'🎭',
@@ -848,14 +949,12 @@ modeBtn.addEventListener('click', () => {
 
 async function loadData(){
   try {
-    const [s,c,co,lg,cu]=await Promise.all([
+    const [s,c,co,lg]=await Promise.all([
       fetch('https://iptv-org.github.io/api/streams.json').then(r=>r.json()),
       fetch('https://iptv-org.github.io/api/channels.json').then(r=>r.json()),
       fetch('https://iptv-org.github.io/api/countries.json').then(r=>r.json()),
       fetch('https://iptv-org.github.io/api/logos.json').then(r=>r.json()),
-      fetch('custom_channels.json').then(r=>r.json()).catch(()=>[]),
     ]);
-    allCustom=cu;
     c.forEach(x=>allChannels[x.id]=x);
     co.forEach(x=>allCountries[x.code]=x);
     lg.forEach(x=>{ if(x.in_use && !allLogos[x.channel]) allLogos[x.channel]=x.url; });
@@ -879,19 +978,6 @@ function buildCountryRow(channels){
   const row=document.getElementById('country-row');
   row.innerHTML='';
 
-  const customBtn=document.createElement('div');
-  customBtn.className='cnt-btn'+(customMode?' active':'');
-  customBtn.innerHTML=`<div class="cnt-flag-circle">🔥</div><div class="cnt-name">Custom</div>`;
-  customBtn.addEventListener('click',()=>{
-    customMode=true;
-    activeCountry=''; activeCategory='';
-    document.querySelectorAll('.cnt-btn').forEach(b=>b.classList.remove('active'));
-    customBtn.classList.add('active');
-    buildTabs([]);
-    renderGrid();
-  });
-  row.appendChild(customBtn);
-
   const allBtn=mkCountryBtn('🌍','All','');
   row.appendChild(allBtn);
 
@@ -911,7 +997,6 @@ function mkCountryBtn(flag, name, code){
   btn.dataset.code=code;
   btn.innerHTML=`<div class="cnt-flag-circle">${flag}</div><div class="cnt-name">${name}</div>`;
   btn.addEventListener('click',()=>{
-    customMode=false;
     activeCountry=code;
     activeCategory='';
     document.querySelectorAll('.cnt-btn').forEach(b=>b.classList.remove('active'));
@@ -926,34 +1011,12 @@ function mkCountryBtn(flag, name, code){
 
 function buildTabs(channels){
   const wrap=document.getElementById('tabs-wrap');
-  if(customMode){
-    const catCount={};
-    allCustom.forEach(c=>{ const cat=(c.category||'General'); catCount[cat]=(catCount[cat]||0)+1; });
-    const allT=mkCustomTab('All','',allCustom.length,true); wrap.innerHTML=''; wrap.appendChild(allT);
-    Object.entries(catCount).sort((a,b)=>b[1]-a[1]).forEach(([cat,count])=>{
-      wrap.appendChild(mkCustomTab(cat,cat,count,false));
-    });
-    return;
-  }
   const catCount={};
   channels.forEach(c=>(c.categories||[]).forEach(cat=>{ catCount[cat]=(catCount[cat]||0)+1; }));
   const allT=mkTab('All','',allStreams.length,true); wrap.innerHTML=''; wrap.appendChild(allT);
   Object.entries(catCount).sort((a,b)=>b[1]-a[1]).slice(0,14).forEach(([cat,count])=>{
     wrap.appendChild(mkTab(capitalize(cat),cat,count,false));
   });
-}
-
-function mkCustomTab(label,cat,count,active){
-  const t=document.createElement('div');
-  t.className='tab'+(active?' active':'');
-  t.innerHTML=`🔥 ${label} <span class="cnt">${count}</span>`;
-  t.addEventListener('click',()=>{
-    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
-    t.classList.add('active');
-    activeCategory=cat;
-    renderGrid();
-  });
-  return t;
 }
 
 function mkTab(label,cat,count,active){
@@ -971,15 +1034,8 @@ function mkTab(label,cat,count,active){
 
 function getFiltered(){
   const q=document.getElementById('search').value.toLowerCase().trim();
-  if(customMode){
-    return allCustom.filter(c=>{
-      const title=(c.name||'').toLowerCase();
-      if(q&&!title.includes(q)) return false;
-      if(activeCategory&&(c.category||'General')!==activeCategory) return false;
-      return true;
-    });
-  }
   return allStreams.filter(s=>{
+    if(deadChannels.has(s.url)) return false;
     const ch=allChannels[s.channel]||{};
     const title=(s.title||ch.name||'').toLowerCase();
     if(q&&!title.includes(q)) return false;
@@ -993,53 +1049,32 @@ function renderGrid(){
   filteredList=getFiltered().slice(0,300);
   const grid=document.getElementById('ch-grid');
 
-  if(customMode){
-    document.getElementById('grid-title').textContent='🔥 CUSTOM CHANNELS'+(activeCategory?' · '+activeCategory.toUpperCase():'');
-    document.getElementById('grid-count').textContent=filteredList.length+' ch';
-  } else {
-    const cnt=allCountries[activeCountry];
-    const cntName=cnt?cnt.name:'All Countries';
-    const flag=cnt?cnt.flag+' ':'';
-    const catLabel=activeCategory?' · '+capitalize(activeCategory).toUpperCase():'';
-    document.getElementById('grid-title').textContent=flag+(activeCountry?cntName.toUpperCase():activeCategory?capitalize(activeCategory).toUpperCase()+' CHANNELS':'ALL CHANNELS')+catLabel;
-    document.getElementById('grid-count').textContent=filteredList.length+' ch';
-  }
+  const cnt=allCountries[activeCountry];
+  const cntName=cnt?cnt.name:'All Countries';
+  const flag=cnt?cnt.flag+' ':'';
+  const catLabel=activeCategory?' · '+capitalize(activeCategory).toUpperCase():'';
+  document.getElementById('grid-title').textContent=flag+(activeCountry?cntName.toUpperCase():activeCategory?capitalize(activeCategory).toUpperCase()+' CHANNELS':'ALL CHANNELS')+catLabel;
+  document.getElementById('grid-count').textContent=filteredList.length+' ch';
 
   if(!filteredList.length){
     grid.innerHTML='<div class="empty-state"><div class="ei">📺</div><p>No channels found</p></div>';
     return;
   }
 
-  if(customMode){
-    grid.innerHTML=filteredList.map((c,i)=>{
-      const name=esc(c.name||'TV');
-      const logo=c.logo||'';
-      const delay=Math.min(i*0.02,0.5);
-      const logoHtml=logo
-        ?`<img class="ch-logo" src="${logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="ch-fallback" style="display:none">${name.substring(0,5)}</div>`
-        :`<div class="ch-fallback">${name.substring(0,5)}</div>`;
-      return `<div class="ch-card" style="animation-delay:${delay}s" data-i="${i}">
-        <div class="on-air-tag">ON AIR</div>
-        <div class="logo-circle">${logoHtml}</div>
-        <div class="ch-label">${name}</div>
-      </div>`;
-    }).join('');
-  } else {
-    grid.innerHTML=filteredList.map((s,i)=>{
-      const ch=allChannels[s.channel]||{};
-      const name=esc(s.title||ch.name||'TV');
-      const logo = (ch.id && allLogos[ch.id]) ? allLogos[ch.id] : (ch.logo || '');
-      const delay=Math.min(i*0.02,0.5);
-      const logoHtml=logo
-        ?`<img class="ch-logo" src="${logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="ch-fallback" style="display:none">${name.substring(0,5)}</div>`
-        :`<div class="ch-fallback">${name.substring(0,5)}</div>`;
-      return `<div class="ch-card" style="animation-delay:${delay}s" data-i="${i}">
-        <div class="on-air-tag">ON AIR</div>
-        <div class="logo-circle">${logoHtml}</div>
-        <div class="ch-label">${name}</div>
-      </div>`;
-    }).join('');
-  }
+  grid.innerHTML=filteredList.map((s,i)=>{
+    const ch=allChannels[s.channel]||{};
+    const name=esc(s.title||ch.name||'TV');
+    const logo = (ch.id && allLogos[ch.id]) ? allLogos[ch.id] : (ch.logo || '');
+    const delay=Math.min(i*0.02,0.5);
+    const logoHtml=logo
+      ?`<img class="ch-logo" src="${logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="ch-fallback" style="display:none">${name.substring(0,5)}</div>`
+      :`<div class="ch-fallback">${name.substring(0,5)}</div>`;
+    return `<div class="ch-card" style="animation-delay:${delay}s" data-i="${i}">
+      <div class="on-air-tag">ON AIR</div>
+      <div class="logo-circle">${logoHtml}</div>
+      <div class="ch-label">${name}</div>
+    </div>`;
+  }).join('');
 
   grid.querySelectorAll('.ch-card').forEach((card,i)=>{
     card.addEventListener('click',()=>selectChannel(i,card));
@@ -1052,15 +1087,6 @@ function selectChannel(i,cardEl){
   currentCard=cardEl;
   cardEl.classList.add('playing');
   cardEl.scrollIntoView({behavior:'smooth',block:'nearest'});
-
-  if(customMode){
-    const c=filteredList[i];
-    document.getElementById('now-title-ctrl').textContent='▶ '+(c.name||'Unknown');
-    showLoading();
-    startHls(c.url, c.headers||{});
-    window.scrollTo({top:0,behavior:'smooth'});
-    return;
-  }
 
   const s=filteredList[i];
   const ch=allChannels[s.channel]||{};
@@ -1107,8 +1133,15 @@ function showError(){
   const o=document.getElementById('player-overlay');
   o.style.display='flex';
   document.getElementById('spinner').style.display='none';
-  document.getElementById('overlay-msg').textContent='🔴 This channel is offline — try another one';
+  document.getElementById('overlay-msg').textContent='🔴 This channel is offline — removing from list';
   if(currentCard) currentCard.classList.add('offline');
+
+  if(currentIndex>=0 && filteredList[currentIndex]){
+    const deadUrl=filteredList[currentIndex].url;
+    deadChannels.add(deadUrl);
+    saveDeadChannels();
+    setTimeout(()=>{ currentCard=null; currentIndex=-1; renderGrid(); }, 900);
+  }
 }
 
 document.getElementById('btn-prev').addEventListener('click',()=>{
@@ -1126,6 +1159,18 @@ function capitalize(s){return s?s[0].toUpperCase()+s.slice(1):'';}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
 loadData();
+
+// WORLD CUP LIVE CARD — PTV Sports direct play
+document.getElementById('wc-card').addEventListener('click',()=>{
+  if(currentCard) currentCard.classList.remove('playing','offline');
+  currentCard=null;
+  currentIndex=-1;
+  document.getElementById('now-title-ctrl').textContent='▶ PTV Sports';
+  showLoading();
+  startHls('https://tvsen5.aynaott.com/PtvSports/tracks-v1a1/mono.ts.m3u8');
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+
 </script>
 </body>
 </html>
