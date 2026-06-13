@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>rsport | World Cup Live</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #030712;
+        --card: #0b0f19;
+        --accent: #2563eb;
+        --cyan: #06b6d4;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: rgba(255,255,255,0.06);
+      }
+
+      * { 
+        box-sizing: border-box; 
+        margin: 0; 
+        padding: 0; 
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        background-image:
+          radial-gradient(ellipse at 20% 0%, rgba(37,99,235,0.15) 0%, transparent 55%),
+          radial-gradient(ellipse at 80% 100%, rgba(6,182,212,0.08) 0%, transparent 55%);
+        background-attachment: fixed;
+        padding: 12px;
+      }
+
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: var(--bg); }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 99px; }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+      }
+
+      /* ── Header ── */
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0;
+        width: 100%;
+      }
+
+      .logo-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(135deg, var(--accent), var(--cyan));
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+      }
+
+      .logo-svg { 
+        width: 18px; 
+        height: 18px; 
+        fill: #fff; 
+      }
+
+      .brand {
+        font-size: 20px;
+        font-weight: 950;
+        letter-spacing: -0.02em;
+        background: linear-gradient(to right, #fff, #93c5fd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .badge {
+        font-size: 9px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        background: linear-gradient(135deg, #059669, #10b981);
+        color: #fff;
+        padding: 2px 6px;
+        border-radius: 99px;
+      }
+
+      /* ── Main Grid ── */
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+      }
+
+      @media (min-width: 992px) {
+        .main-grid {
+          grid-template-columns: 2.3fr 1fr;
+        }
+      }
+
+      /* ── Player Card ── */
+      .player-card {
+        background: #000;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        width: 100%;
+      }
+
+      .player-inner {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #000;
+        display: block;
+      }
+
+      .status-tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(0,0,0,0.75);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.08);
+        padding: 4px 10px;
+        border-radius: 99px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+
+      .status-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #10b981;
+        animation: pulse 1.6s infinite;
+      }
+
+      .status-dot.offline { background: #ef4444; animation: none; }
+      .status-dot.loading { background: #f59e0b; }
+
+      @keyframes pulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.5); }
+        50%      { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+      }
+
+      /* ── Sidebar & Channels Grid ── */
+      .sidebar {
+        width: 100%;
+      }
+
+      .channels-panel {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--text);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .channel-list-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        width: 100%;
+      }
+
+      /* Responsive Grid: Row of 3 on tablets/horizontal mobile, Column on desktop */
+      @media (min-width: 576px) and (max-width: 991px) {
+        .channel-list-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .channel-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--border);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: left;
+        color: inherit;
+        transition: all 0.2s ease;
+        width: 100%;
+        font-family: inherit;
+        outline: none;
+      }
+
+      .channel-btn:hover {
+        background: #111827;
+        border-color: rgba(255,255,255,0.1);
+        transform: translateY(-1px);
+      }
+
+      .channel-btn.active {
+        background: linear-gradient(135deg, rgba(37,99,235,0.12), rgba(6,182,212,0.04));
+        border-color: var(--accent);
+        box-shadow: 0 4px 12px rgba(37,99,235,0.1);
+      }
+
+      .ch-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px solid rgba(255,255,255,0.04);
+      }
+
+      .ch-info { 
+        flex: 1; 
+        min-width: 0; 
+      }
+
+      .ch-name {
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .ch-desc {
+        font-size: 10px;
+        color: var(--muted);
+        margin-top: 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .ch-tag {
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1px 4px;
+        border-radius: 3px;
+        background: rgba(37,99,235,0.12);
+        color: #93c5fd;
+        margin-top: 3px;
+      }
+
+      .channel-btn.active .ch-tag {
+        background: rgba(16,185,129,0.12);
+        color: #34d399;
+      }
+
+      /* ── Footer ── */
+      .footer {
+        text-align: center;
+        padding: 16px 0;
+        border-top: 1px solid var(--border);
+        font-size: 10px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="logo-group">
+          <div class="logo-icon">
+            <svg class="logo-svg" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
+          <span class="brand">rsport<span class="badge">Live</span></span>
+        </div>
+      </header>
+
+      <!-- Main Grid -->
+      <main class="main-grid">
+
+        <!-- Video Player -->
+        <section class="player-card">
+          <div class="player-inner">
+            <video id="video" controls autoplay playsinline poster="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"></video>
+            <iframe id="iframe-player" style="display:none;width:100%;height:100%;border:none;position:absolute;inset:0;" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+            <div class="status-tag">
+              <span class="status-dot loading" id="status-dot"></span>
+              <span id="status-label">Connecting</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Channel Picker -->
+        <aside class="sidebar">
+          <div class="channels-panel">
+            <p class="section-title">📺 Live Channels</p>
+            <div class="channel-list-container" id="channel-list"></div>
+          </div>
+        </aside>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 rsport. Streams belong to their respective rights holders. Use responsibly.</p>
+      </footer>
+    </div>
+
+    <!-- Multi-Format Playback Engines (Hls.js & Shaka Player) -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.compiled.js" crossorigin="anonymous"></script>
+    <script>
+      const channels = [
+        {
+          name: "World Feed (HD)",
+          desc: "Global sports stream • HLS",
+          url: "https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8",
+          tag: "HD",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "hls"
+        },
+        {
+          name: "Toffee FIFA 2026",
+          desc: "World Cup 2026 feed • HLS",
+          url: "https://toffee-seg.smartdev.workers.dev/manifest?url=https%3A%2F%2Fprod-cdn01-live.toffeelive.com%2Flive%2FFIFA-2026%2F0%2Fmaster_3500.m3u8&cookie=%22Expires%3D1781372565~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature%3DAaPNU3dPJyjCWl9uqYUhckb0fdg7RP-kLcuSqR5V5pjo62P2P2iQTcyTjpVuuIIP9NLcdW0VA1Z9_6NVwI2H36GyJbAC%22",
+          tag: "2026",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "hls"
+        },
+        {
+          name: "Caze TV Brazil",
+          desc: "Brazilian sports • Iframe",
+          url: "https://fifa-world-cup-live.pages.dev/caze-tv",
+          tag: "1080p",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "iframe"
+        },
+        {
+          name: "English Live Feed (DRM)",
+          desc: "Commentary stream • DASH",
+          url: "https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/live.isml/.mpd",
+          tag: "DRM",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "dash",
+          drm: {
+            clearKeys: {
+              "893bc63340876605f52886a42e0ccce5": "d6c46d2d691056fbd091bf1f01b21a91"
+            }
+          }
+        }
+      ];
+
+      const videoEl    = document.getElementById("video");
+      const iframeEl   = document.getElementById("iframe-player");
+      const statusDot  = document.getElementById("status-dot");
+      const statusLabel= document.getElementById("status-label");
+      const listEl     = document.getElementById("channel-list");
+
+      let activeUrl = channels[0].url;
+      let hls;
+      let shakaPlayer;
+
+      function setStatus(state) {
+        statusDot.className = "status-dot " +
+          (state === "Live" ? "" : state === "Connecting" ? "loading" : "offline");
+        statusLabel.textContent = state;
+      }
+
+      function showVideo() {
+        videoEl.style.display = "block";
+        iframeEl.style.display = "none";
+        iframeEl.src = "";
+      }
+
+      function showIframe(url) {
+        videoEl.style.display = "none";
+        iframeEl.style.display = "block";
+        iframeEl.src = url;
+        setStatus("Live");
+      }
+
+      async function play(channel) {
+        activeUrl = channel.url;
+
+        // Clean up HLS
+        if (hls) { hls.destroy(); hls = null; }
+
+        // Clean up Shaka
+        if (shakaPlayer) {
+          try { await shakaPlayer.destroy(); } catch(e) {}
+          shakaPlayer = null;
+        }
+
+        // Handle iframe format
+        if (channel.format === "iframe") {
+          showIframe(channel.url);
+          highlightActive();
+          return;
+        }
+
+        showVideo();
+        setStatus("Connecting");
+
+        if (channel.format === "dash" && window.shaka) {
+          window.shaka.polyfill.installAll();
+          
+          if (!window.shaka.Player.isBrowserSupported()) {
+            setStatus("Unsupported");
+            return;
+          }
+
+          shakaPlayer = new window.shaka.Player(videoEl);
+          
+          if (channel.drm) {
+            shakaPlayer.configure({
+              drm: {
+                clearKeys: channel.drm.clearKeys
+              }
+            });
+          }
+
+          shakaPlayer.addEventListener("error", (e) => {
+            console.error("Shaka Player Error:", e.detail);
+            setStatus("Offline");
+          });
+
+          try {
+            await shakaPlayer.load(channel.url);
+            setStatus("Live");
+          } catch(e) {
+            console.error("Shaka Load Error:", e);
+            setStatus("Offline");
+          }
+
+        } else {
+          if (videoEl.canPlayType("application/vnd.apple.mpegurl")) {
+            videoEl.src = channel.url;
+            videoEl.onloadeddata = () => setStatus("Live");
+            videoEl.onerror      = () => setStatus("Offline");
+          } else if (window.Hls && window.Hls.isSupported()) {
+            hls = new window.Hls({ enableWorker: true, lowLatencyMode: true, backBufferLength: 60 });
+            hls.loadSource(channel.url);
+            hls.attachMedia(videoEl);
+            hls.on(window.Hls.Events.MANIFEST_PARSED, () => setStatus("Live"));
+            hls.on(window.Hls.Events.ERROR, (_, d) => { if (d.fatal) setStatus("Offline"); });
+          } else {
+            setStatus("Unsupported");
+          }
+        }
+
+        highlightActive();
+      }
+
+      function highlightActive() {
+        document.querySelectorAll(".channel-btn").forEach(btn => {
+          btn.classList.toggle("active", btn.dataset.url === activeUrl);
+          const tag = btn.querySelector(".ch-tag");
+          if (tag) tag.textContent = btn.dataset.url === activeUrl ? "Watching" : btn.dataset.tag;
+        });
+      }
+
+      function render() {
+        listEl.innerHTML = "";
+        channels.forEach(ch => {
+          const btn = document.createElement("button");
+          btn.className = "channel-btn " + (ch.url === activeUrl ? "active" : "");
+          btn.dataset.url = ch.url;
+          btn.dataset.tag = ch.tag;
+          btn.innerHTML = `
+            <div class="ch-icon" style="background:${ch.iconBg}">${ch.iconSvg}</div>
+            <div class="ch-info">
+              <div class="ch-name">${ch.name}</div>
+              <div class="ch-desc">${ch.desc}</div>
+              <span class="ch-tag">${ch.url === activeUrl ? "Watching" : ch.tag}</span>
+            </div>
+          `;
+          btn.addEventListener("click", () => play(ch));
+          listEl.appendChild(btn);
+        });
+      }
+
+      render();
+      play(channels[0]);
+    </script>
+  </body>
+</html>
