@@ -12,7 +12,7 @@
       gtag('js', new Date());
       gtag('config', 'G-73B0JZTYCY');
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <style>
       :root {
         --bg: #030712;
@@ -148,22 +148,7 @@
         display: block;
       }
 
-      .status-tag {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 10;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        background: rgba(0,0,0,0.75);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255,255,255,0.08);
-        padding: 4px 10px;
-        border-radius: 99px;
-        font-size: 10px;
-        font-weight: 600;
-      }
+      /* status-tag moved to channel cards */
 
       .status-dot {
         width: 6px;
@@ -272,15 +257,6 @@
         text-overflow: ellipsis;
       }
 
-      .ch-desc {
-        font-size: 10px;
-        color: var(--muted);
-        margin-top: 1px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
       .ch-tag {
         display: inline-block;
         font-size: 8px;
@@ -297,6 +273,8 @@
         background: rgba(16,185,129,0.12);
         color: #34d399;
       }
+
+
 
       /* ── Schedule Section ── */
       .schedule-section {
@@ -527,10 +505,7 @@
           <div class="player-inner">
             <video id="video" controls autoplay playsinline poster="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"></video>
             <iframe id="iframe-player" style="display:none;width:100%;height:100%;border:none;position:absolute;inset:0;" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
-            <div class="status-tag">
-              <span class="status-dot loading" id="status-dot"></span>
-              <span id="status-label">Connecting</span>
-            </div>
+
           </div>
         </section>
 
@@ -765,6 +740,42 @@
               "549ab7cd35a64bb6bb479ecead04d69d": "829799ed534d11fcadeb4b192467e050"
             }
           }
+        },
+        {
+          name: "Server 5",
+          desc: "Live sports stream • HLS",
+          url: "http://go8knm.optikl.ink/X/index.php/Besyria2/video.m3u8",
+          tag: "HD",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "hls"
+        },
+        {
+          name: "Server 6",
+          desc: "TVRI Sport HD • HLS",
+          url: "https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8",
+          tag: "HD",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "hls"
+        },
+        {
+          name: "Server 7",
+          desc: "FIFA Exclusive • HLS",
+          url: "https://fifaexclusive.myziboplay.xyz/Fifa/index.m3u8?token=fe6Uuugm3xgIm2",
+          tag: "HD",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "hls"
+        },
+        {
+          name: "Server 8",
+          desc: "Live sports stream • HLS",
+          url: "https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8",
+          tag: "HD",
+          iconBg: "#0a1628",
+          iconSvg: '<img src="https://webxpert-rasel.github.io/worldcupicon/IMG_20260613_202814.jpg" style="width:36px;height:36px;object-fit:cover;border-radius:6px"/>',
+          format: "hls"
         }
       ];
 
@@ -778,11 +789,7 @@
       let hls;
       let shakaPlayer;
 
-      function setStatus(state) {
-        statusDot.className = "status-dot " +
-          (state === "Live" ? "" : state === "Connecting" ? "loading" : "offline");
-        statusLabel.textContent = state;
-      }
+function setStatus(state) {}
 
       function showVideo() {
         videoEl.style.display = "block";
@@ -888,9 +895,9 @@
             <div class="ch-icon" style="background:${ch.iconBg}">${ch.iconSvg}</div>
             <div class="ch-info">
               <div class="ch-name">${ch.name}</div>
-              <div class="ch-desc">${ch.desc}</div>
               <span class="ch-tag">${ch.url === activeUrl ? "Watching" : ch.tag}</span>
             </div>
+
           `;
           btn.addEventListener("click", () => play(ch));
           listEl.appendChild(btn);
