@@ -1,350 +1,513 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rSport - FIFA World Cup 2026</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rsport | World Cup Live</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #0b0d12; color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; min-height: 100vh; }
-        
-        header { position: sticky; top: 0; z-index: 50; background: rgba(11, 13, 18, 0.95); border-bottom: 1px solid #1f2937; backdrop-filter: blur(10px); }
-        .header-content { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; max-width: 1400px; margin: 0 auto; }
-        .logo { display: flex; align-items: center; gap: 12px; }
-        .logo-icon { width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, #f97316, #ef4444); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px; }
-        .logo-text { font-size: 20px; font-weight: 800; display: none; }
-        .logo-text span:first-child { color: #f97316; }
-        .logo-text span:last-child { color: #ef4444; }
-        
-        .search-box { flex: 1; margin: 0 30px; max-width: 500px; }
-        .search-box input { width: 100%; padding: 10px 15px; background: #161922; border: 1px solid #374151; border-radius: 8px; color: white; font-size: 14px; }
-        .search-box input:focus { outline: none; border-color: #ef4444; }
-        
-        .container { display: flex; max-width: 1400px; margin: 0 auto; }
-        .sidebar { display: none; width: 200px; border-right: 1px solid #1f2937; background: #0b0d12; padding: 20px 0; position: sticky; top: 60px; height: calc(100vh - 60px); overflow-y: auto; }
-        .sidebar-btn { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 20px; background: none; border: none; color: #d1d5db; cursor: pointer; font-size: 14px; text-align: left; }
-        .sidebar-btn:hover { background: #161922; }
-        .sidebar-btn.active { background: rgba(239, 68, 68, 0.1); color: #ef4444; border-right: 2px solid #ef4444; }
-        
-        .main { flex: 1; padding: 20px; }
-        
-        .info-banner { background: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.5); border-radius: 8px; padding: 15px; margin-bottom: 20px; font-size: 13px; line-height: 1.6; }
-        
-        .player-container { background: black; border-radius: 12px; border: 1px solid #374151; margin-bottom: 20px; overflow: hidden; }
-        .player { width: 100%; aspect-ratio: 16/9; background: #161922; display: flex; align-items: center; justify-content: center; color: #9ca3af; font-size: 18px; }
-        .player-info { background: #0f1116; border-top: 1px solid #374151; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
-        .player-channel { display: flex; align-items: center; gap: 12px; }
-        .player-logo { width: 50px; height: 50px; border-radius: 6px; background: #161922; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .player-logo img { width: 100%; height: 100%; object-fit: cover; }
-        .player-text p:first-child { font-weight: 600; }
-        .player-text p:last-child { font-size: 12px; color: #9ca3af; }
-        
-        .section-title { font-size: 18px; font-weight: 700; margin: 25px 0 15px; color: #fbbf24; border-bottom: 2px solid #fbbf24; padding-bottom: 10px; }
-        
-        .channels-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; }
-        .channel-card { background: #161922; border: 2px solid #374151; border-radius: 8px; padding: 10px; text-align: center; cursor: pointer; transition: all 0.2s; }
-        .channel-card:hover { background: #1a1f2e; border-color: #6b7280; transform: translateY(-2px); }
-        .channel-card.active { border-color: #ef4444; background: rgba(239, 68, 68, 0.1); box-shadow: 0 0 15px rgba(239, 68, 68, 0.5); }
-        .channel-card.featured { border-color: #fbbf24; background: rgba(251, 191, 36, 0.1); box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
-        .channel-logo { width: 80px; height: 80px; margin: 0 auto 8px; border-radius: 6px; overflow: hidden; background: #0f1116; display: flex; align-items: center; justify-content: center; }
-        .channel-logo img { width: 100%; height: 100%; object-fit: cover; }
-        .channel-name { font-size: 11px; font-weight: 600; margin-bottom: 5px; line-height: 1.2; }
-        .channel-badge { font-size: 9px; background: #3b82f6; padding: 2px 6px; border-radius: 4px; display: inline-block; margin: 2px; }
-        .channel-badge.live { background: #ef4444; }
-        .channel-badge.featured { background: #fbbf24; color: #000; }
-        
-        .matches-list { }
-        .match-card { background: #161922; border: 1px solid #374151; border-radius: 8px; padding: 15px; margin-bottom: 12px; transition: all 0.2s; }
-        .match-card:hover { background: #1a1f2e; border-color: #fbbf24; }
-        .match-header { display: flex; gap: 15px; margin-bottom: 10px; align-items: center; }
-        .match-stage { font-size: 11px; background: #fbbf24; color: #000; padding: 4px 8px; border-radius: 4px; font-weight: 600; white-space: nowrap; }
-        .match-teams { flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-        .team { display: flex; align-items: center; gap: 8px; flex: 1; }
-        .team-flag { font-size: 32px; }
-        .team p { font-weight: 600; flex: 1; }
-        .vs { color: #9ca3af; font-size: 12px; min-width: 30px; text-align: center; }
-        .match-footer { display: flex; justify-content: space-between; font-size: 12px; color: #9ca3af; border-top: 1px solid #374151; padding-top: 10px; }
-        
-        .servers-panel { background: #0f1116; border: 1px solid #374151; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
-        .server-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
-        .server-card { background: #0b0d12; border: 1px solid #374151; border-radius: 6px; padding: 12px; font-size: 11px; }
-        .server-name { font-weight: 600; margin-bottom: 8px; color: #10b981; }
-        .server-url { color: #9ca3af; margin-bottom: 8px; word-break: break-all; font-family: monospace; font-size: 10px; }
-        .server-cred { display: flex; justify-content: space-between; margin: 5px 0; align-items: center; }
-        .server-label { color: #6b7280; }
-        .server-value { color: #d1d5db; font-family: monospace; font-size: 10px; flex: 1; margin-left: 5px; word-break: break-all; }
-        .copy-btn { background: #16a34a; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 10px; font-weight: 600; margin-left: 5px; }
-        .copy-btn:hover { background: #15803d; }
-        
-        .watch-btn { background: #f97316; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: 600; }
-        .watch-btn:hover { background: #ea580c; }
-        
-        .footer { background: #0f1116; border-top: 1px solid #374151; padding: 20px; margin-top: 30px; font-size: 12px; color: #9ca3af; text-align: center; }
-        
-        @media (min-width: 768px) {
-            .sidebar { display: block; }
-            .logo-text { display: inline; }
-            .search-box { margin: 0 50px; }
-            .channels-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
-        }
-        
-        .hidden { display: none; }
-        .live-dot { display: inline-block; width: 6px; height: 6px; background: #ef4444; border-radius: 50%; margin-right: 3px; animation: pulse 2s infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <div class="logo-icon">R</div>
-                <div class="logo-text"><span>r</span><span>Sport</span></div>
-            </div>
-            <div class="search-box">
-                <input type="text" id="search" placeholder="Search channels or matches...">
-            </div>
-        </div>
-    </header>
+      :root {
+        --bg: #030712;
+        --card: #0b0f19;
+        --accent: #2563eb;
+        --cyan: #06b6d4;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: rgba(255,255,255,0.06);
+      }
 
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        background-image:
+          radial-gradient(ellipse at 20% 0%, rgba(37,99,235,0.18) 0%, transparent 55%),
+          radial-gradient(ellipse at 80% 100%, rgba(6,182,212,0.10) 0%, transparent 55%);
+        background-attachment: fixed;
+      }
+
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: var(--bg); }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 99px; }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: clamp(16px, 4vw, 36px) 16px;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 3vw, 28px);
+        min-height: 100vh;
+        justify-content: center;
+      }
+
+      /* ── Header ── */
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+        animation: fadeSlideIn 0.7s ease;
+      }
+
+      @keyframes fadeSlideIn {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .logo-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo-icon {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, var(--accent), var(--cyan));
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 16px rgba(37,99,235,0.30);
+        transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+      }
+
+      .logo-icon:hover {
+        transform: scale(1.08) rotate(3deg);
+      }
+
+      .logo-svg { width: 22px; height: 22px; fill: #fff; }
+
+      .brand {
+        font-size: clamp(22px, 5vw, 28px);
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        background: linear-gradient(to right, #fff, #93c5fd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .badge {
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        background: linear-gradient(135deg, #059669, #10b981);
+        color: #fff;
+        padding: 3px 8px;
+        border-radius: 99px;
+        vertical-align: middle;
+        margin-left: 6px;
+      }
+
+      .title {
+        font-size: clamp(22px, 4.5vw, 44px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: clamp(13px, 2vw, 16px);
+        max-width: 500px;
+      }
+
+      /* ── Main Grid ── */
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(16px, 3vw, 28px);
+      }
+
+      @media (min-width: 768px) {
+        .main-grid {
+          grid-template-columns: 2fr 1fr;
+        }
+      }
+
+      /* ── Player Card ── */
+      .player-card {
+        background: #000;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+      }
+
+      .player-inner {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #000;
+      }
+
+      .status-tag {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        background: rgba(0,0,0,0.72);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.10);
+        padding: 6px 13px;
+        border-radius: 99px;
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #10b981;
+        animation: pulse 1.6s infinite;
+      }
+
+      .status-dot.offline { background: #ef4444; animation: none; }
+      .status-dot.loading { background: #f59e0b; }
+
+      @keyframes pulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.5); }
+        50%      { box-shadow: 0 0 0 9px rgba(16,185,129,0); }
+      }
+
+      /* ── Sidebar ── */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .section-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .channels-panel {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .channel-btn {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--border);
+        padding: 14px;
+        border-radius: 14px;
+        cursor: pointer;
+        text-align: left;
+        color: inherit;
+        transition: all 0.2s ease;
+        width: 100%;
+        font-family: inherit;
+      }
+
+      .channel-btn:hover {
+        background: #111827;
+        border-color: rgba(255,255,255,0.14);
+        transform: translateX(3px);
+      }
+
+      .channel-btn.active {
+        background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(6,182,212,0.06));
+        border-color: var(--accent);
+        box-shadow: 0 0 16px rgba(37,99,235,0.12);
+      }
+
+      .ch-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px solid rgba(255,255,255,0.06);
+      }
+
+      .channel-btn.active .ch-icon {
+        border-color: var(--accent);
+      }
+
+      .ch-info { flex: 1; min-width: 0; }
+
+      .ch-name {
+        font-size: 14px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .ch-desc {
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .ch-tag {
+        display: inline-block;
+        font-size: 9px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 2px 6px;
+        border-radius: 4px;
+        background: rgba(37,99,235,0.15);
+        color: #93c5fd;
+        margin-top: 4px;
+      }
+
+      .channel-btn.active .ch-tag {
+        background: rgba(16,185,129,0.15);
+        color: #34d399;
+      }
+
+      /* ── Footer ── */
+      .footer {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        font-size: 11px;
+        color: var(--muted);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .footer a {
+        color: var(--cyan);
+        text-decoration: none;
+      }
+
+      .footer a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <!-- Sidebar -->
+
+      <!-- Header -->
+      <header class="header">
+        <div class="logo-group">
+          <div class="logo-icon">
+            <svg class="logo-svg" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
+          <span class="brand">rsport<span class="badge">Live</span></span>
+        </div>
+      </header>
+
+      <!-- Main Grid -->
+      <main class="main-grid">
+
+        <!-- Video Player -->
+        <section class="player-card">
+          <div class="player-inner">
+            <video id="video" controls autoplay playsinline poster="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"></video>
+            <div class="status-tag">
+              <span class="status-dot loading" id="status-dot"></span>
+              <span id="status-label">Connecting</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Channel Picker -->
         <aside class="sidebar">
-            <button class="sidebar-btn active" onclick="switchCategory('all')">🏠 All Channels</button>
-            <button class="sidebar-btn" onclick="switchCategory('live')">📺 Live TV</button>
-            <button class="sidebar-btn" onclick="switchCategory('sports')">⚽ Sports</button>
-            <button class="sidebar-btn" onclick="switchCategory('movies')">🎬 Movies</button>
-            <button class="sidebar-btn" onclick="switchCategory('schedule')">📅 WC 2026</button>
-            <button class="sidebar-btn" onclick="switchCategory('servers')">🖥️ Servers</button>
+          <div class="channels-panel">
+            <p class="section-title">📺 Live Channels</p>
+            <div id="channel-list"></div>
+          </div>
         </aside>
 
-        <!-- Main Content -->
-        <main class="main">
-            <!-- Info Banner -->
-            <div class="info-banner">
-                ✅ <strong>rSport - FIFA World Cup 2026</strong><br>
-                🔥 Featured: Caze TV, Win Sports, beIN Sports 1 | 7 Xtream Servers | Complete Schedule
-            </div>
+      </main>
 
-            <!-- Player -->
-            <div class="player-container">
-                <div class="player">▶ Click a channel to stream</div>
-                <div class="player-info">
-                    <div class="player-channel">
-                        <div class="player-logo">
-                            <img id="playerLogo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23374151' width='100' height='100'/%3E%3Ctext x='50' y='50' font-size='40' fill='white' text-anchor='middle' dy='.3em'%3E▶%3C/text%3E%3C/svg%3E" alt="Channel">
-                        </div>
-                        <div class="player-text">
-                            <p id="playerName">Select a Channel</p>
-                            <p id="playerInfo">Click any channel below to start</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- All Channels -->
-            <div id="allSection">
-                <h2 class="section-title">🔥 FEATURED - LIVE NOW</h2>
-                <div class="channels-grid" id="featuredChannels"></div>
-                
-                <h2 class="section-title">📺 ALL SPORTS CHANNELS</h2>
-                <div class="channels-grid" id="allChannels"></div>
-            </div>
-
-            <!-- Servers Section -->
-            <div id="serversSection" class="hidden">
-                <h2 class="section-title">Xtream IPTV Servers</h2>
-                <div class="servers-panel">
-                    <div class="server-grid" id="serversList"></div>
-                </div>
-            </div>
-
-            <!-- Schedule Section -->
-            <div id="scheduleSection" class="hidden">
-                <h2 class="section-title">FIFA World Cup 2026 Schedule</h2>
-                <div class="matches-list" id="matchesList"></div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                ✅ 7 Xtream Servers | ✅ 15 Real Channels | ✅ World Cup Schedule | ✅ Works on All Devices
-            </div>
-        </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2026 rsport. Streams belong to their respective rights holders. Use responsibly.</p>
+      </footer>
     </div>
 
+    <!-- Multi-Format Playback Engines (Hls.js & Shaka Player) -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.compiled.js" crossorigin="anonymous"></script>
     <script>
-        const channels = [
-            // FEATURED CHANNELS - Show first
-            { id: 1, name: 'Caze TV', category: 'sports', quality: '1080p', type: 'LIVE', logo: 'https://play-lh.googleusercontent.com/1A4P0sFY0fq5uj2KGT2C0zC_V2v75eWQVCqZG-3O5A_aEBjg9iXk-BFaBhVlvVQqjAE=w240-h480', streamUrl: 'https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8', featured: true },
-            { id: 2, name: 'Win Sports', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://www.winsports.co/assets/img/favicon/android-chrome-512x512.png', streamUrl: 'https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8', featured: true },
-            { id: 3, name: 'beIN Sports 1', category: 'sports', quality: 'FHD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BeIN_Sports_logo.svg/200px-BeIN_Sports_logo.svg.png', streamUrl: 'https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8', featured: true },
-            
-            // OTHER CHANNELS
-            { id: 4, name: 'Sky Sports Premier', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sky_Sports_Premier_League_logo.png/200px-Sky_Sports_Premier_League_logo.png', streamUrl: '', featured: false },
-            { id: 5, name: 'BT Sport', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/BT_Sport_logo.png/200px-BT_Sport_logo.png', streamUrl: '', featured: false },
-            { id: 6, name: 'ESPN', category: 'sports', quality: 'FHD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN_logo.svg/200px-ESPN_logo.svg.png', streamUrl: '', featured: false },
-            { id: 7, name: 'DAZN', category: 'sports', quality: '1080p', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/DAZN_logo.svg/200px-DAZN_logo.svg.png', streamUrl: '', featured: false },
-            { id: 8, name: 'NBC Sports', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/NBCSports_logo.svg/200px-NBCSports_logo.svg.png', streamUrl: '', featured: false },
-            { id: 9, name: 'Fox Sports', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/200px-FOX_Sports_logo.svg.png', streamUrl: '', featured: false },
-            { id: 10, name: 'BBC Sport', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BBC_Sport_logo_2019.png/200px-BBC_Sport_logo_2019.png', streamUrl: '', featured: false },
-            { id: 11, name: 'Star Sports', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/en/4/4b/Star_Sports_Logo.png', streamUrl: '', featured: false },
-            { id: 12, name: 'Sony Ten Sports', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Sony_Ten_1_new_logo.png/180px-Sony_Ten_1_new_logo.png', streamUrl: '', featured: false },
-            { id: 13, name: 'Eurosport', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Eurosport_logo.svg/200px-Eurosport_logo.svg.png', streamUrl: '', featured: false },
-            { id: 14, name: 'Turner Sports', category: 'sports', quality: 'FHD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Turner_Broadcasting_System_logo.svg/200px-Turner_Broadcasting_System_logo.svg.png', streamUrl: '', featured: false },
-            { id: 15, name: 'Telemundo', category: 'sports', quality: 'HD', type: 'LIVE', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Telemundo_logo_2013.svg/200px-Telemundo_logo_2013.svg.png', streamUrl: '', featured: false },
-        ];
-
-        const servers = [
-            { name: 'Dale Play TV 1', server: 'daleplaytv.vip:80', user: '4nd9wbtu', pass: 'c5hrn9eFhfsa' },
-            { name: 'Zeus Pro', server: 'tv.zeuspro.xyz:8080', user: 'peterordonez', pass: 'OKEtJocXkL' },
-            { name: 'Red World Pro', server: 'redworld.pro:8880', user: '56974081590w', pass: 'A8TsKszFcs6n' },
-            { name: 'Dale Play TV 2', server: 'daleplaytv.vip:80', user: 'prf010823g', pass: 'oejrbnedh' },
-            { name: 'Fox Bleu CDN', server: 'foxbleu-cdn.com', user: 'e8:aa:cb:c4:bf:92', pass: 'aMzpeeG' },
-            { name: 'R Latino Pro 1', server: 'rlatinop.com:8880', user: 'Jhoselin102030xd1011', pass: 'SQDyyTdV2z6x' },
-            { name: 'R Latino Pro 2', server: 'rlatinop.com:8880', user: 'josesosa547tv', pass: 'FFy5GgKfmFgh' },
-        ];
-
-        const matches = [
-            { team1: 'Argentina', team2: 'Morocco', flag1: '🇦🇷', flag2: '🇲🇦', date: 'June 12', time: '14:00 UTC', stage: 'Group A', stadium: 'MetLife' },
-            { team1: 'France', team2: 'Canada', flag1: '🇫🇷', flag2: '🇨🇦', date: 'June 12', time: '17:00 UTC', stage: 'Group A', stadium: 'SoFi' },
-            { team1: 'Brazil', team2: 'Serbia', flag1: '🇧🇷', flag2: '🇷🇸', date: 'June 13', time: '15:00 UTC', stage: 'Group B', stadium: 'Arrowhead' },
-            { team1: 'Spain', team2: 'Costa Rica', flag1: '🇪🇸', flag2: '🇨🇷', date: 'June 13', time: '18:00 UTC', stage: 'Group B', stadium: 'AT&T' },
-            { team1: 'Germany', team2: 'Mexico', flag1: '🇩🇪', flag2: '🇲🇽', date: 'June 14', time: '16:00 UTC', stage: 'Group C', stadium: 'Allegiant' },
-            { team1: 'Netherlands', team2: 'Poland', flag1: '🇳🇱', flag2: '🇵🇱', date: 'June 14', time: '19:00 UTC', stage: 'Group C', stadium: 'Lincoln' },
-            { team1: 'England', team2: 'Iran', flag1: '🇬🇧', flag2: '🇮🇷', date: 'June 15', time: '14:00 UTC', stage: 'Group D', stadium: 'NRG' },
-            { team1: 'USA', team2: 'Wales', flag1: '🇺🇸', flag2: '🏴', date: 'June 15', time: '17:00 UTC', stage: 'Group D', stadium: 'Levi' },
-        ];
-
-        function switchCategory(cat) {
-            document.querySelectorAll('.sidebar-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            document.getElementById('allSection').classList.add('hidden');
-            document.getElementById('serversSection').classList.add('hidden');
-            document.getElementById('scheduleSection').classList.add('hidden');
-            
-            if (cat === 'all') document.getElementById('allSection').classList.remove('hidden');
-            if (cat === 'servers') document.getElementById('serversSection').classList.remove('hidden');
-            if (cat === 'schedule') document.getElementById('scheduleSection').classList.remove('hidden');
-        }
-
-        function renderChannels() {
-            // Featured channels
-            let featured = '';
-            channels.filter(ch => ch.featured).forEach(ch => {
-                featured += `
-                    <div class="channel-card featured" onclick="selectChannel(this, '${ch.name}', '${ch.logo}', '${ch.streamUrl}')">
-                        <div class="channel-logo">
-                            <img src="${ch.logo}" alt="${ch.name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23374151%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2250%22 font-size=%2230%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3E📺%3C/text%3E%3C/svg%3E'">
-                        </div>
-                        <div class="channel-name">${ch.name}</div>
-                        <div class="channel-badge featured"><span class="live-dot"></span>${ch.quality}</div>
-                    </div>
-                `;
-            });
-            document.getElementById('featuredChannels').innerHTML = featured;
-            
-            // All channels
-            let html = '';
-            channels.forEach(ch => {
-                html += `
-                    <div class="channel-card" onclick="selectChannel(this, '${ch.name}', '${ch.logo}', '${ch.streamUrl}')">
-                        <div class="channel-logo">
-                            <img src="${ch.logo}" alt="${ch.name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23374151%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2250%22 font-size=%2230%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3E📺%3C/text%3E%3C/svg%3E'">
-                        </div>
-                        <div class="channel-name">${ch.name}</div>
-                        <div class="channel-badge ${ch.type === 'LIVE' ? 'live' : ''}"><span class="live-dot"></span>${ch.quality}</div>
-                    </div>
-                `;
-            });
-            document.getElementById('allChannels').innerHTML = html;
-        }
-
-        function renderServers() {
-            let html = '';
-            servers.forEach(s => {
-                html += `
-                    <div class="server-card">
-                        <div class="server-name">✅ ${s.name}</div>
-                        <div class="server-url">${s.server}</div>
-                        <div class="server-cred">
-                            <span class="server-label">User:</span>
-                            <span class="server-value">${s.user}</span>
-                            <button class="copy-btn" onclick="copy('${s.user}')">Copy</button>
-                        </div>
-                        <div class="server-cred">
-                            <span class="server-label">Pass:</span>
-                            <span class="server-value">${s.pass}</span>
-                            <button class="copy-btn" onclick="copy('${s.pass}')">Copy</button>
-                        </div>
-                    </div>
-                `;
-            });
-            document.getElementById('serversList').innerHTML = html;
-        }
-
-        function renderMatches() {
-            let html = '';
-            matches.forEach(m => {
-                html += `
-                    <div class="match-card">
-                        <div class="match-header">
-                            <div class="match-stage">${m.stage}</div>
-                            <div style="font-size: 12px; color: #9ca3af;">${m.date} • ${m.time}</div>
-                        </div>
-                        <div class="match-teams">
-                            <div class="team">
-                                <span class="team-flag">${m.flag1}</span>
-                                <p>${m.team1}</p>
-                            </div>
-                            <span class="vs">vs</span>
-                            <div class="team">
-                                <span class="team-flag">${m.flag2}</span>
-                                <p>${m.team2}</p>
-                            </div>
-                        </div>
-                        <div class="match-footer">
-                            <span>📍 ${m.stadium} Stadium</span>
-                            <button class="watch-btn">Watch Live</button>
-                        </div>
-                    </div>
-                `;
-            });
-            document.getElementById('matchesList').innerHTML = html;
-        }
-
-        function selectChannel(element, name, logo, streamUrl) {
-            document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('active'));
-            element.classList.add('active');
-            document.getElementById('playerName').textContent = name;
-            if(streamUrl) {
-                document.getElementById('playerInfo').textContent = '▶ Ready to Stream - Click to play';
-            } else {
-                document.getElementById('playerInfo').textContent = '▶ Coming Soon';
+      const channels = [
+        {
+          name: "World Feed (HD)",
+          desc: "Global international sports stream • English HLS",
+          url: "https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8",
+          tag: "HD",
+          iconBg: "#2563eb",
+          iconSvg: '<svg width="22" height="22" viewBox="0 0 24 24"><rect width="24" height="24" fill="#2563eb" rx="6"/><circle cx="12" cy="12" r="7" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="12" cy="12" r="3" fill="#38bdf8"/></svg>',
+          format: "hls"
+        },
+        {
+          name: "Toffee FIFA 2026",
+          desc: "Premium FIFA World Cup 2026 feed • HD HLS",
+          url: "https://toffee-seg.smartdev.workers.dev/manifest?url=https%3A%2F%2Fprod-cdn01-live.toffeelive.com%2Flive%2FFIFA-2026%2F0%2Fmaster_3500.m3u8&cookie=%22Expires%3D1781372565~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature%3DAaPNU3dPJyjCWl9uqYUhckb0fdg7RP-kLcuSqR5V5pjo62P2P2iQTcyTjpVuuIIP9NLcdW0VA1Z9_6NVwI2H36GyJbAC%22",
+          tag: "2026",
+          iconBg: "#7c3aed",
+          iconSvg: '<svg width="22" height="22" viewBox="0 0 24 24"><rect width="24" height="24" fill="#7c3aed" rx="6"/><circle cx="12" cy="12" r="7" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 5l2 4 4 1-3 3 1 4-4-2-4 2 1-4-3-3 4-1z" fill="#fbbf24"/></svg>',
+          format: "hls"
+        },
+        {
+          name: "English Live Feed (DRM)",
+          desc: "Direct official stream with English commentary • ClearKey DASH",
+          url: "https://live.vrtcdn.be/groupd/live/0761024f-37fe-4254-bc37-e95d7c62b2d1/live.isml/.mpd",
+          tag: "DRM",
+          iconBg: "#db2777",
+          iconSvg: '<svg width="22" height="22" viewBox="0 0 24 24"><rect width="24" height="24" fill="#db2777" rx="6"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="#fff"/></svg>',
+          format: "dash",
+          drm: {
+            clearKeys: {
+              "893bc63340876605f52886a42e0ccce5": "d6c46d2d691056fbd091bf1f01b21a91"
             }
-            document.getElementById('playerLogo').src = logo;
-            
-            if(streamUrl) {
-                console.log('Stream URL: ' + streamUrl);
-            }
+          }
+        }
+      ];
+
+      const videoEl    = document.getElementById("video");
+      const statusDot  = document.getElementById("status-dot");
+      const statusLabel= document.getElementById("status-label");
+      const listEl     = document.getElementById("channel-list");
+
+      let activeUrl = channels[0].url;
+      let hls;
+      let shakaPlayer;
+
+      function setStatus(state) {
+        statusDot.className = "status-dot " +
+          (state === "Live" ? "" : state === "Connecting" ? "loading" : "offline");
+        statusLabel.textContent = state;
+      }
+
+      async function play(channel) {
+        activeUrl = channel.url;
+        
+        // 1. Clean up HLS
+        if (hls) { hls.destroy(); hls = null; }
+        
+        // 2. Clean up Shaka
+        if (shakaPlayer) {
+          try {
+            await shakaPlayer.destroy();
+          } catch(e) {}
+          shakaPlayer = null;
         }
 
-        function copy(text) {
-            navigator.clipboard.writeText(text);
-            alert('✅ Copied: ' + text);
-        }
+        setStatus("Connecting");
 
-        document.getElementById('search').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            document.querySelectorAll('.channel-card').forEach(card => {
-                const name = card.querySelector('.channel-name').textContent.toLowerCase();
-                card.style.display = name.includes(query) ? 'block' : 'none';
+        if (channel.format === "dash" && window.shaka) {
+          // --- Shaka Playback for ClearKey DRM DASH ---
+          window.shaka.polyfill.installAll();
+          
+          if (!window.shaka.Player.isBrowserSupported()) {
+            setStatus("Unsupported");
+            return;
+          }
+
+          shakaPlayer = new window.shaka.Player(videoEl);
+          
+          if (channel.drm) {
+            shakaPlayer.configure({
+              drm: {
+                clearKeys: channel.drm.clearKeys
+              }
             });
+          }
+
+          shakaPlayer.addEventListener("error", (e) => {
+            console.error("Shaka Player Error:", e.detail);
+            setStatus("Offline");
+          });
+
+          try {
+            await shakaPlayer.load(channel.url);
+            setStatus("Live");
+          } catch(e) {
+            console.error("Shaka Load Error:", e);
+            setStatus("Offline");
+          }
+
+        } else {
+          // --- HLS Playback ---
+          if (videoEl.canPlayType("application/vnd.apple.mpegurl")) {
+            videoEl.src = channel.url;
+            videoEl.onloadeddata = () => setStatus("Live");
+            videoEl.onerror      = () => setStatus("Offline");
+          } else if (window.Hls && window.Hls.isSupported()) {
+            hls = new window.Hls({ enableWorker: true, lowLatencyMode: true, backBufferLength: 60 });
+            hls.loadSource(channel.url);
+            hls.attachMedia(videoEl);
+            hls.on(window.Hls.Events.MANIFEST_PARSED, () => setStatus("Live"));
+            hls.on(window.Hls.Events.ERROR, (_, d) => { if (d.fatal) setStatus("Offline"); });
+          } else {
+            setStatus("Unsupported");
+          }
+        }
+
+        highlightActive();
+      }
+
+      function highlightActive() {
+        document.querySelectorAll(".channel-btn").forEach(btn => {
+          btn.classList.toggle("active", btn.dataset.url === activeUrl);
+          const tag = btn.querySelector(".ch-tag");
+          if (tag) tag.textContent = btn.dataset.url === activeUrl ? "Watching" : btn.dataset.tag;
         });
+      }
 
-        renderChannels();
-        renderServers();
-        renderMatches();
+      function render() {
+        listEl.innerHTML = "";
+        channels.forEach(ch => {
+          const btn = document.createElement("button");
+          btn.className = "channel-btn " + (ch.url === activeUrl ? "active" : "");
+          btn.dataset.url = ch.url;
+          btn.dataset.tag = ch.tag;
+          btn.innerHTML = `
+            <div class="ch-icon" style="background:${ch.iconBg}">${ch.iconSvg}</div>
+            <div class="ch-info">
+              <div class="ch-name">${ch.name}</div>
+              <div class="ch-desc">${ch.desc}</div>
+              <span class="ch-tag">${ch.url === activeUrl ? "Watching" : ch.tag}</span>
+            </div>
+          `;
+          btn.addEventListener("click", () => play(ch));
+          listEl.appendChild(btn);
+        });
+      }
+
+      render();
+      play(channels[0]);
     </script>
-</body>
+  </body>
 </html>
