@@ -132,52 +132,7 @@
         .empty-schedule { text-align: center; padding: 40px 20px; color: #6b7280; font-size: 14px; }
         .empty-schedule span { font-size: 40px; display: block; margin-bottom: 10px; }
 
-        /* ── LIVE SCORES SLIDER ── */
-        .scores-section { margin: 0 0 4px; }
-        .scores-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-        .scores-header .section-title { margin: 0; border: none; padding: 0; }
-        .live-badge-count { font-size: 10px; background: #ef4444; color: #fff; padding: 2px 7px; border-radius: 10px; font-weight: 700; animation: pulse 1.5s infinite; }
-        .scores-refresh { background: none; border: 1px solid #374151; color: #9ca3af; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 11px; display: flex; align-items: center; gap: 5px; transition: border-color 0.15s; }
-        .scores-refresh:hover { border-color: #ef4444; color: #ef4444; }
-        .scores-refresh.spinning svg { animation: spin 0.8s linear infinite; }
-        @keyframes spin { to { transform: rotate(360deg); } }
 
-        .scores-slider-wrap { position: relative; }
-        .scores-slider { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-        .scores-slider::-webkit-scrollbar { display: none; }
-        .score-card { flex: 0 0 200px; background: #161922; border: 1px solid #2a2f3d; border-radius: 12px; padding: 12px; scroll-snap-align: start; transition: border-color 0.15s, transform 0.15s; cursor: default; }
-        .score-card:hover { border-color: #374151; transform: translateY(-1px); }
-        .score-card.live-now { border-color: rgba(239,68,68,0.5); background: rgba(239,68,68,0.04); }
-        .score-card.finished { opacity: 0.75; }
-
-        .sc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .sc-league { font-size: 9px; color: #6b7280; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase; max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-        .sc-status { font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; white-space: nowrap; }
-        .sc-status.live  { background: #ef4444; color: #fff; animation: pulse 1.5s infinite; }
-        .sc-status.ft    { background: #374151; color: #9ca3af; }
-        .sc-status.sched { background: #1f2937; color: #6b7280; }
-        .sc-status.ht    { background: #f97316; color: #fff; }
-
-        .sc-teams { display: flex; flex-direction: column; gap: 6px; }
-        .sc-team { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
-        .sc-team-left { display: flex; align-items: center; gap: 6px; min-width: 0; }
-        .sc-flag { font-size: 16px; flex-shrink: 0; }
-        .sc-name { font-size: 11px; font-weight: 600; color: #e5e7eb; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; }
-        .sc-score { font-size: 16px; font-weight: 800; color: #fff; min-width: 16px; text-align: right; }
-        .sc-score.winning { color: #10b981; }
-        .sc-score.losing  { color: #6b7280; }
-        .sc-divider { border: none; border-top: 1px solid #2a2f3d; margin: 6px 0; }
-
-        .scores-nav { display: none; position: absolute; top: 50%; transform: translateY(-50%); background: rgba(11,13,18,0.9); border: 1px solid #374151; color: #fff; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 14px; align-items: center; justify-content: center; z-index: 2; transition: background 0.15s; }
-        .scores-nav:hover { background: #ef4444; border-color: #ef4444; }
-        .scores-nav.left { left: -14px; }
-        .scores-nav.right { right: -14px; }
-        @media(min-width:768px){ .scores-nav { display: flex; } }
-
-        .scores-empty { text-align: center; padding: 20px; color: #6b7280; font-size: 13px; background: #161922; border-radius: 10px; border: 1px dashed #2a2f3d; }
-        .scores-dots { display: flex; justify-content: center; gap: 5px; margin-top: 8px; }
-        .scores-dot { width: 6px; height: 6px; border-radius: 50%; background: #374151; cursor: pointer; transition: background 0.15s; }
-        .scores-dot.active { background: #ef4444; }
     </style>
 </head>
 <body>
@@ -235,25 +190,8 @@
             <div class="section-title">🔥 FEATURED — LIVE NOW</div>
             <div class="channels-grid" id="featuredChannels"></div>
 
-            <!-- LIVE SCORES SLIDER -->
-            <div class="scores-section" id="scoresSection">
-                <div class="scores-header">
-                    <div class="section-title">⚽ Live Scores <span class="live-badge-count" id="liveCount" style="display:none"></span></div>
-                    <button class="scores-refresh" id="scoresRefreshBtn" onclick="fetchScores()" title="Refresh scores">
-                        <svg id="refreshIcon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 4v6h6"/><path d="M23 20v-6h-6"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
-                        Refresh
-                    </button>
-                </div>
-                <div class="scores-slider-wrap">
-                    <button class="scores-nav left" id="scoresPrev" onclick="slideScores(-1)">&#8249;</button>
-                    <div class="scores-slider" id="scoresSlider"></div>
-                    <button class="scores-nav right" id="scoresNext" onclick="slideScores(1)">&#8250;</button>
-                </div>
-                <div class="scores-dots" id="scoresDots"></div>
-            </div>
-
             <div class="section-title">📺 ALL SPORTS CHANNELS</div>
-            <div class="channels-grid" id="allChannels"></div>
+            <div class="channels-grid" id="allChannels" style="display:none"></div>
 
             <div class="section-title" style="margin-top:30px;">📅 Upcoming Matches</div>
             <div id="matchesListMain"></div>
@@ -274,7 +212,7 @@
         </div>
 
         <div class="footer">
-            ✅ 7 Xtream Servers &nbsp;·&nbsp; ✅ 15 Channels &nbsp;·&nbsp; ✅ Match Schedule &nbsp;·&nbsp; ✅ All Devices
+            ✅ 9 Xtream Servers &nbsp;·&nbsp; ✅ 5 Channels &nbsp;·&nbsp; ✅ Match Schedule &nbsp;·&nbsp; ✅ All Devices
         </div>
     </main>
 </div>
@@ -283,31 +221,43 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━ DATA ━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 const channels = [
-    { id:1,  name:'Caze TV',          cat:'sports', q:'1080p', logo:'https://play-lh.googleusercontent.com/1A4P0sFY0fq5uj2KGT2C0zC_V2v75eWQVCqZG-3O5A_aEBjg9iXk-BFaBhVlvVQqjAE=w240-h480', url:'https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8', featured:true },
-    { id:2,  name:'Win Sports',        cat:'sports', q:'HD',    logo:'https://www.winsports.co/assets/img/favicon/android-chrome-512x512.png', url:'https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8', featured:true },
-    { id:3,  name:'beIN Sports 1',     cat:'sports', q:'FHD',   logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BeIN_Sports_logo.svg/200px-BeIN_Sports_logo.svg.png', url:'https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8', featured:true },
-    { id:4,  name:'Sky Sports PL',     cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Sky_Sports_logo_2020.png/250px-Sky_Sports_logo_2020.png', url:'', featured:false },
-    { id:5,  name:'BT Sport',          cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/TNT_Sports_logo.png/250px-TNT_Sports_logo.png', url:'', featured:false },
-    { id:6,  name:'ESPN',              cat:'sports', q:'FHD',   logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN_logo.svg/200px-ESPN_logo.svg.png', url:'', featured:false },
-    { id:7,  name:'DAZN',              cat:'sports', q:'1080p', logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/DAZN_logo.svg/200px-DAZN_logo.svg.png', url:'', featured:false },
-    { id:8,  name:'NBC Sports',        cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/NBCSports_logo.svg/200px-NBCSports_logo.svg.png', url:'', featured:false },
-    { id:9,  name:'Fox Sports',        cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/200px-FOX_Sports_logo.svg.png', url:'', featured:false },
-    { id:10, name:'BBC Sport',         cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BBC_Sport_logo_2019.png/200px-BBC_Sport_logo_2019.png', url:'', featured:false },
-    { id:11, name:'Star Sports',       cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/en/4/4b/Star_Sports_Logo.png', url:'', featured:false },
-    { id:12, name:'Sony Ten Sports',   cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Sony_Ten_1_new_logo.png/180px-Sony_Ten_1_new_logo.png', url:'', featured:false },
-    { id:13, name:'Eurosport',         cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Eurosport_logo.svg/200px-Eurosport_logo.svg.png', url:'', featured:false },
-    { id:14, name:'Turner Sports',     cat:'sports', q:'FHD',   logo:'https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Turner_Sports_logo.png/250px-Turner_Sports_logo.png', url:'', featured:false },
-    { id:15, name:'Telemundo',         cat:'sports', q:'HD',    logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Telemundo_logo_2013.svg/200px-Telemundo_logo_2013.svg.png', url:'', featured:false },
+    {
+        id:1, name:'Toffee Live', cat:'sports', q:'HD', featured:true,
+        logo:'https://play-lh.googleusercontent.com/Q8MZPXV9hmkFMgYuFW7B8K5hkqjJGkbMFgUMaGRE2jVlJF4F_2B-IcBpjEKMOQV0qQ=w240-h480',
+        url:'https://toffee-seg.smartdev.workers.dev/manifest?url=https%3A%2F%2Fprod-cdn01-live.toffeelive.com%2Flive%2FFIFA-2026%2F0%2Fmaster_3500.m3u8&cookie=%22Expires%3D1781372565~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature%3DAaPNU3dPJyjCWl9uqYUhckb0fdg7RP-kLcuSqR5V5pjo62P2P2iQTcyTjpVuuIIP9NLcdW0VA1Z9_6NVwI2H36GyJbAC%22'
+    },
+    {
+        id:2, name:'English Feed', cat:'sports', q:'HD', featured:true,
+        logo:'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png',
+        url:'https://fifa-world-cup-live.pages.dev/english.html'
+    },
+    {
+        id:3, name:'Caze TV', cat:'sports', q:'1080p', featured:true,
+        logo:'https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/1080p-vtt/thumbnail.jpg',
+        url:'https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/1080p-vtt/index.m3u8'
+    },
+    {
+        id:4, name:'Win Sports', cat:'sports', q:'HD', featured:true,
+        logo:'https://www.winsports.co/assets/img/favicon/android-chrome-512x512.png',
+        url:'https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8'
+    },
+    {
+        id:5, name:'beIN Sports 1', cat:'sports', q:'FHD', featured:true,
+        logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BeIN_Sports_logo.svg/200px-BeIN_Sports_logo.svg.png',
+        url:'https://live20.bozztv.com/giatvplayout7/giatv-209611/tracks-v1a1/mono.ts.m3u8'
+    },
 ];
 
 const servers = [
-    { name:'Dale Play TV 1', server:'daleplaytv.vip:80',   user:'4nd9wbtu',              pass:'c5hrn9eFhfsa' },
-    { name:'Zeus Pro',       server:'tv.zeuspro.xyz:8080',  user:'peterordonez',          pass:'OKEtJocXkL' },
-    { name:'Red World Pro',  server:'redworld.pro:8880',    user:'56974081590w',          pass:'A8TsKszFcs6n' },
-    { name:'Dale Play TV 2', server:'daleplaytv.vip:80',   user:'prf010823g',            pass:'oejrbnedh' },
-    { name:'Fox Bleu CDN',   server:'foxbleu-cdn.com',      user:'e8:aa:cb:c4:bf:92',    pass:'aMzpeeG' },
-    { name:'R Latino Pro 1', server:'rlatinop.com:8880',    user:'Jhoselin102030xd1011', pass:'SQDyyTdV2z6x' },
-    { name:'R Latino Pro 2', server:'rlatinop.com:8880',    user:'josesosa547tv',         pass:'FFy5GgKfmFgh' },
+    { name:'Dale Play TV 1',  server:'daleplaytv.vip:80',      user:'4nd9wbtu',              pass:'c5hrn9eFhfsa' },
+    { name:'Zeus Pro 1',      server:'tv.zeuspro.xyz:8080',     user:'peterordonez',          pass:'OKEtJocXkL' },
+    { name:'Red World Pro',   server:'redworld.pro:8880',       user:'56974081590w',          pass:'A8TsKszFcs6n' },
+    { name:'Dale Play TV 2',  server:'daleplaytv.vip:80',      user:'prf010823g',            pass:'oejrbnedh' },
+    { name:'Fox Bleu CDN',    server:'foxbleu-cdn.com',         user:'e8:aa:cb:c4:bf:92',    pass:'aMzpeeG' },
+    { name:'R Latino Pro 1',  server:'rlatinop.com:8880',       user:'Jhoselin102030xd1011', pass:'SQDyyTdV2z6x' },
+    { name:'Zeus Pro 2',      server:'tv.zeuspro.xyz:8080',     user:'peterordonez',          pass:'OKEtJocXkL' },
+    { name:'R Latino Pro 2',  server:'rlatinop.com:8880',       user:'josesosa547tv',         pass:'FFy5GgKfmFgh' },
+    { name:'Dale Play TV 3',  server:'daleplaytv.vip:80',      user:'4nd9wbtu',              pass:'c5hrn9eFhfsa' },
 ];
 
 // FIFA World Cup 2026 — Full Group Stage Schedule
@@ -446,10 +396,48 @@ function selectChannel(id) {
         return;
     }
 
+    // HTML page URL → open in new tab (can't embed due to X-Frame-Options)
+    if (ch.url.endsWith('.html') || ch.url.includes('.html?')) {
+        window.open(ch.url, '_blank');
+        video.style.display = 'none';
+        placeholder.style.display = 'flex';
+        placeholder.innerHTML = '<span class="play-icon">🔗</span>' + ch.name + ' opened in new tab';
+        document.getElementById('playerInfo').textContent = 'Opened in new tab';
+        setStatus('live', 'LIVE');
+        return;
+    }
+
     placeholder.style.display = 'none';
     video.style.display = 'block';
     document.getElementById('playerInfo').textContent = 'Loading…';
     setStatus('loading', 'Connecting…');
+
+    // .ts stream → use as direct src
+    if (ch.url.endsWith('.ts') || ch.url.includes('.ts.m3u8') || ch.url.includes('mono.ts')) {
+        if (Hls.isSupported()) {
+            hlsInstance = new Hls({ enableWorker: false, lowLatencyMode: true });
+            hlsInstance.loadSource(ch.url);
+            hlsInstance.attachMedia(video);
+            hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+                video.play().catch(()=>{});
+                document.getElementById('playerInfo').textContent = '🔴 Live · ' + ch.q;
+                setStatus('live', 'LIVE');
+            });
+            hlsInstance.on(Hls.Events.ERROR, (e, d) => {
+                if (d.fatal) {
+                    setStatus('error', 'Error');
+                    document.getElementById('playerInfo').textContent = 'Stream unavailable';
+                    showError('Stream could not load — may be offline or geo-restricted.');
+                }
+            });
+        } else {
+            video.src = ch.url;
+            video.addEventListener('loadedmetadata', () => { video.play().catch(()=>{}); setStatus('live','LIVE'); document.getElementById('playerInfo').textContent='🔴 Live · '+ch.q; }, {once:true});
+            video.addEventListener('error', () => { setStatus('error','Error'); showError('Stream could not load.'); }, {once:true});
+        }
+        document.querySelector('.player-container').scrollIntoView({behavior:'smooth', block:'start'});
+        return;
+    }
 
     if (Hls.isSupported()) {
         hlsInstance = new Hls({ enableWorker: false, lowLatencyMode: true });
@@ -490,11 +478,15 @@ function switchCategory(cat, btn) {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━ RENDER: CHANNELS ━━━━━━━━━━━━━━━━ */
-// Safe fallback – called from onerror, no quotes in URL needed
+// Safe fallback – called from onerror, shows channel initial
 function imgError(el) {
     el.onerror = null;
     el.style.display = 'none';
-    el.parentNode.innerHTML = '<div style="font-size:28px;color:#6b7280">📺</div>';
+    const name = el.alt || '?';
+    const initial = name.charAt(0).toUpperCase();
+    const colors = ['#ef4444','#f97316','#eab308','#22c55e','#3b82f6','#8b5cf6','#ec4899'];
+    const color = colors[name.charCodeAt(0) % colors.length];
+    el.parentNode.innerHTML = `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:${color}22;font-size:26px;font-weight:800;color:${color}">${initial}</div>`;
 }
 
 function makeCard(ch) {
@@ -632,210 +624,10 @@ function copy(text) {
     });
 }
 
-/* ━━━━━━━━━━━━━━━━━━━━━━━━ LIVE SCORES ━━━━━━━━━━━━━━━━━━━━ */
-// Country name → flag emoji map
-const flagMap = {
-    'argentina':'🇦🇷','australia':'🇦🇺','austria':'🇦🇹','belgium':'🇧🇪',
-    'brazil':'🇧🇷','canada':'🇨🇦','chile':'🇨🇱','china':'🇨🇳',
-    'colombia':'🇨🇴','costa rica':'🇨🇷','croatia':'🇭🇷','czechia':'🇨🇿',
-    'czech republic':'🇨🇿','denmark':'🇩🇰','ecuador':'🇪🇨','egypt':'🇪🇬',
-    'england':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','france':'🇫🇷','germany':'🇩🇪','ghana':'🇬🇭',
-    'greece':'🇬🇷','haiti':'🇭🇹','iran':'🇮🇷','iraq':'🇮🇶',
-    'italy':'🇮🇹','japan':'🇯🇵','jordan':'🇯🇴','mexico':'🇲🇽',
-    'morocco':'🇲🇦','netherlands':'🇳🇱','new zealand':'🇳🇿','nigeria':'🇳🇬',
-    'norway':'🇳🇴','panama':'🇵🇦','paraguay':'🇵🇾','poland':'🇵🇱',
-    'portugal':'🇵🇹','qatar':'🇶🇦','russia':'🇷🇺','saudi arabia':'🇸🇦',
-    'scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','senegal':'🇸🇳','serbia':'🇷🇸','south africa':'🇿🇦',
-    'south korea':'🇰🇷','spain':'🇪🇸','sweden':'🇸🇪','switzerland':'🇨🇭',
-    'tunisia':'🇹🇳','turkey':'🇹🇷','türkiye':'🇹🇷','ukraine':'🇺🇦',
-    'united states':'🇺🇸','usa':'🇺🇸','uruguay':'🇺🇾','uzbekistan':'🇺🇿',
-    'wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','algeria':'🇩🇿','cabo verde':'🇨🇻','bosnia':'🇧🇦',
-    "côte d'ivoire":'🇨🇮','ivory coast':'🇨🇮','curaçao':'🇨🇼',
-    'dr congo':'🇨🇩','congo':'🇨🇩','new zealand':'🇳🇿',
-};
-function getFlag(name) {
-    if (!name) return '🏳️';
-    const key = name.toLowerCase();
-    for (const k in flagMap) { if (key.includes(k)) return flagMap[k]; }
-    return '🏳️';
-}
-
-// ESPN public score endpoints (soccer leagues active during World Cup period)
-const ESPN_ENDPOINTS = [
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard', league:'World Cup 2026' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world.qualifier.conmebol/scoreboard', league:'WC Qualifier' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard', league:'Premier League' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard', league:'MLS' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard', league:'Bundesliga' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard', league:'La Liga' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard', league:'Serie A' },
-    { url:'https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard', league:'Ligue 1' },
-];
-
-let scoresAutoRefresh = null;
-
-async function fetchScores() {
-    const btn = document.getElementById('scoresRefreshBtn');
-    const icon = document.getElementById('refreshIcon');
-    btn.classList.add('spinning');
-    btn.disabled = true;
-
-    let allEvents = [];
-
-    await Promise.allSettled(ESPN_ENDPOINTS.map(async ep => {
-        try {
-            const r = await fetch(ep.url);
-            if (!r.ok) return;
-            const d = await r.json();
-            const events = (d.events || []).map(e => ({ ...e, _league: ep.league }));
-            allEvents = allEvents.concat(events);
-        } catch(e) {}
-    }));
-
-    // Sort: live first, then scheduled, then finished
-    const order = { 'in':0, 'halftime':1, 'pre':2, 'post':3 };
-    allEvents.sort((a,b) => {
-        const sa = order[a.status?.type?.state] ?? 4;
-        const sb = order[b.status?.type?.state] ?? 4;
-        return sa - sb;
-    });
-
-    renderScores(allEvents);
-    btn.classList.remove('spinning');
-    btn.disabled = false;
-}
-
-function renderScores(events) {
-    const slider = document.getElementById('scoresSlider');
-    const dotsEl = document.getElementById('scoresDots');
-    const liveCount = document.getElementById('liveCount');
-
-    if (!events.length) {
-        slider.innerHTML = '<div class="scores-empty">⚽ No matches right now.<br><small>Check back soon!</small></div>';
-        dotsEl.innerHTML = '';
-        liveCount.style.display = 'none';
-        return;
-    }
-
-    let liveN = 0;
-    slider.innerHTML = '';
-
-    events.forEach((ev, i) => {
-        const comp = ev.competitions?.[0];
-        const home = comp?.competitors?.find(c => c.homeAway === 'home');
-        const away = comp?.competitors?.find(c => c.homeAway === 'away');
-        if (!home || !away) return;
-
-        const homeName  = home.team?.shortDisplayName || home.team?.displayName || '?';
-        const awayName  = away.team?.shortDisplayName || away.team?.displayName || '?';
-        const homeScore = home.score ?? '-';
-        const awayScore = away.score ?? '-';
-        const homeFlag  = home.team?.flag?.href ? '' : getFlag(home.team?.displayName || '');
-        const awayFlag  = away.team?.flag?.href ? '' : getFlag(away.team?.displayName || '');
-
-        const state    = ev.status?.type?.state;   // 'pre' | 'in' | 'post'
-        const detail   = ev.status?.type?.shortDetail || ev.status?.type?.description || '';
-        const isLive   = state === 'in';
-        const isHT     = detail.toLowerCase().includes('half');
-        const isFT     = state === 'post';
-        const league   = ev._league || ev.competitions?.[0]?.league?.shortName || '';
-
-        if (isLive) liveN++;
-
-        // Score colouring
-        const hNum = parseInt(homeScore), aNum = parseInt(awayScore);
-        let hClass = '', aClass = '';
-        if (!isNaN(hNum) && !isNaN(aNum) && (isLive || isFT)) {
-            if (hNum > aNum) { hClass = 'winning'; aClass = 'losing'; }
-            else if (aNum > hNum) { aClass = 'winning'; hClass = 'losing'; }
-        }
-
-        let statusLabel = '', statusClass = 'sched';
-        if (isLive && isHT) { statusLabel = 'HT'; statusClass = 'ht'; }
-        else if (isLive)    { statusLabel = detail || 'LIVE'; statusClass = 'live'; }
-        else if (isFT)      { statusLabel = 'FT'; statusClass = 'ft'; }
-        else {
-            // Show local time for scheduled
-            try {
-                const d = new Date(ev.date);
-                statusLabel = d.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:true});
-            } catch(e) { statusLabel = 'Soon'; }
-        }
-
-        const card = document.createElement('div');
-        card.className = 'score-card' + (isLive ? ' live-now' : '') + (isFT ? ' finished' : '');
-        card.innerHTML = `
-            <div class="sc-top">
-                <span class="sc-league">${league}</span>
-                <span class="sc-status ${statusClass}">${statusLabel}</span>
-            </div>
-            <div class="sc-teams">
-                <div class="sc-team">
-                    <div class="sc-team-left">
-                        <span class="sc-flag">${homeFlag}</span>
-                        <span class="sc-name">${homeName}</span>
-                    </div>
-                    <span class="sc-score ${hClass}">${isLive || isFT ? homeScore : ''}</span>
-                </div>
-                <hr class="sc-divider">
-                <div class="sc-team">
-                    <div class="sc-team-left">
-                        <span class="sc-flag">${awayFlag}</span>
-                        <span class="sc-name">${awayName}</span>
-                    </div>
-                    <span class="sc-score ${aClass}">${isLive || isFT ? awayScore : ''}</span>
-                </div>
-            </div>`;
-        slider.appendChild(card);
-    });
-
-    // Live count badge
-    if (liveN > 0) {
-        liveCount.textContent = liveN + ' LIVE';
-        liveCount.style.display = 'inline';
-    } else {
-        liveCount.style.display = 'none';
-    }
-
-    // Dots
-    const cards = slider.querySelectorAll('.score-card');
-    dotsEl.innerHTML = '';
-    const visibleDots = Math.min(cards.length, 10);
-    for (let i = 0; i < visibleDots; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'scores-dot' + (i === 0 ? ' active' : '');
-        const idx = i;
-        dot.onclick = () => {
-            cards[idx]?.scrollIntoView({behavior:'smooth', block:'nearest', inline:'start'});
-        };
-        dotsEl.appendChild(dot);
-    }
-
-    // Update dots on scroll
-    slider.onscroll = () => {
-        const cardW = cards[0]?.offsetWidth + 10 || 210;
-        const active = Math.round(slider.scrollLeft / cardW);
-        dotsEl.querySelectorAll('.scores-dot').forEach((d,i) => d.classList.toggle('active', i === active));
-    };
-
-    // Auto-refresh every 60s while live matches exist
-    clearInterval(scoresAutoRefresh);
-    if (liveN > 0) {
-        scoresAutoRefresh = setInterval(fetchScores, 60000);
-    }
-}
-
-function slideScores(dir) {
-    const slider = document.getElementById('scoresSlider');
-    const cardW = (slider.querySelector('.score-card')?.offsetWidth || 200) + 10;
-    slider.scrollBy({ left: dir * cardW * 2, behavior: 'smooth' });
-}
-
 /* ━━━━━━━━━━━━━━━━━━━━━━━━ INIT ━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 renderChannels();
 renderServers();
 renderMatches();
-fetchScores();
 </script>
 </body>
 </html>
